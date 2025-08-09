@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Arizona Relativity — Coming Soon</title>
-
 <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+<style>@import url("https://use.typekit.net/qke6kvg.css");</style>
 
 <style>
   :root { --ua-red:#AB0520; }
-  body { font-family: 'Montserrat', sans-serif; }
+  body { font-family: "proxima-nova", sans-serif; }
 
   /* Starfield background */
   body::before{
@@ -32,27 +30,48 @@
             mask-image: radial-gradient(ellipse at center, black, transparent 85%);
   }
 
-  /* Static BH glow */
   .glow {
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+    position: absolute; inset: 0; z-index: -1;
     background: radial-gradient(circle at center, rgba(171,5,32,0.45) 0%, transparent 60%);
     filter: blur(70px);
+  }
+
+  .quick-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 0.5rem;
+    color: #d1d5db;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .quick-link:hover {
+    background-color: rgba(171,5,32,0.25);
+    border-color: var(--ua-red);
+    color: white;
   }
 </style>
 </head>
 
-<body class="bg-black text-white min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
-
+<body class="bg-black text-white min-h-screen flex flex-col justify-between relative overflow-hidden">
   <div class="glow"></div>
 
-  <div class="text-center space-y-4 relative z-10">
-    <h1 class="text-5xl md:text-7xl font-bold tracking-wide" style="color: var(--ua-red);">
+  <main class="flex-grow flex flex-col items-center justify-center space-y-4 relative z-10">
+    <h1 class="text-5xl md:text-7xl tracking-wide" style="color: var(--ua-red); font-weight: 300;">
       Arizona Relativity
     </h1>
-    <p class="text-xl md:text-2xl text-gray-300 italic">Website coming soon...</p>
-  </div>
+    <p class="text-xl md:text-2xl italic" style="color: #d1d5db; font-weight: 100;">
+      Website coming soon...
+    </p>
+  </main>
 
+  <footer class="w-full py-6 flex justify-center space-x-4 relative z-10">
+    <a href="https://astro.arizona.edu/" target="_blank" rel="noopener" class="quick-link">Steward Observatory</a>
+    <a href="https://astro.arizona.edu/research-groups/theoretical-astrophysics-program" target="_blank" rel="noopener" class="quick-link">Theoretical Astrophysics Program</a>
+    <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Vasileios%20Paschalidis%22&sort=date%20desc" target="_blank" rel="noopener" class="quick-link">Publications</a>
+
+  </footer>
 </body>
 </html>
