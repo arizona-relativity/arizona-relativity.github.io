@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arizona Relativity — Coming Soon</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root { --ua-red:#AB0520; }
+  body { font-family: 'Montserrat', sans-serif; }
+
+  /* Starfield background */
+  body::before{
+    content:""; position:fixed; inset:0; z-index:-3;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(171,5,32,0.35), transparent 25%),
+      radial-gradient(circle at 80% 30%, rgba(171,5,32,0.25), transparent 35%),
+      radial-gradient(circle at 40% 80%, rgba(171,5,32,0.25), transparent 25%);
+  }
+  body::after{
+    content:""; position:fixed; inset:0; z-index:-2; opacity:0.6;
+    background-image:
+      radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.8) 50%, transparent 51%),
+      radial-gradient(1px 1px at 30% 40%, rgba(255,255,255,.6) 50%, transparent 51%),
+      radial-gradient(1px 1px at 70% 30%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1px 1px at 50% 80%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1px 1px at 85% 60%, rgba(255,255,255,.8) 50%, transparent 51%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black, transparent 85%);
+            mask-image: radial-gradient(ellipse at center, black, transparent 85%);
+  }
+
+  /* Static BH glow */
+  .glow {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(circle at center, rgba(171,5,32,0.45) 0%, transparent 60%);
+    filter: blur(70px);
+  }
+</style>
+</head>
+
+<body class="bg-black text-white min-h-screen flex flex-col items-center justify-center relative overflow-hidden">
+
+  <div class="glow"></div>
+
+  <div class="text-center space-y-4 relative z-10">
+    <h1 class="text-5xl md:text-7xl font-bold tracking-wide" style="color: var(--ua-red);">
+      Arizona Relativity
+    </h1>
+    <p class="text-xl md:text-2xl text-gray-300 italic">Website coming soon...</p>
+  </div>
+
+</body>
+</html>
