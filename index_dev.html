@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arizona Relativity</title>
+
+<!-- Tailwind (CDN, no build step) -->
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/lucide-static@latest/font/lucide.css" rel="stylesheet">
+
+<style>
+  :root{
+    --ua-blue:#0C234B;  /* Arizona navy */
+    --ua-red:#AB0520;   /* Arizona cardinal */
+  }
+  /* Starfield / glow */
+  body::before{
+    content:"";
+    position:fixed; inset:0; z-index:-2;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(12,35,75,0.40), transparent 25%),
+      radial-gradient(circle at 80% 30%, rgba(171,5,32,0.24), transparent 35%),
+      radial-gradient(circle at 40% 80%, rgba(12,35,75,0.30), transparent 25%);
+  }
+  body::after{
+    content:"";
+    position:fixed; inset:0; z-index:-1; opacity:.6;
+    background-image:
+      radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.8) 50%, transparent 51%),
+      radial-gradient(1px 1px at 30% 40%, rgba(255,255,255,.6) 50%, transparent 51%),
+      radial-gradient(1px 1px at 70% 30%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1px 1px at 50% 80%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1px 1px at 85% 60%, rgba(255,255,255,.8) 50%, transparent 51%);
+    mask-image: radial-gradient(ellipse at center, black, transparent 85%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black, transparent 85%);
+  }
+
+  .focus-outline:focus-visible { outline:2px solid var(--ua-red); outline-offset:3px; border-radius:0.5rem; }
+  .modal-backdrop { background: rgba(0,0,0,0.8); }
+  .no-scroll { overflow: hidden; }
+</style>
+</head>
+
+<body class="bg-black text-gray-200 selection:bg-[color:var(--ua-blue)]/40 selection:text-white">
+
+<!-- Header -->
+<header class="sticky top-0 z-40 backdrop-blur bg-black/60 border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="h-8 w-8 rounded-full shadow-lg"
+           style="background: radial-gradient(60% 60% at 40% 40%, var(--ua-blue), transparent 70%), conic-gradient(from 120deg at 50% 50%, var(--ua-red), var(--ua-blue));"></div>
+      <span class="font-semibold tracking-wide text-white">Arizona Relativity</span>
+    </div>
+    <nav class="flex gap-1 text-sm">
+      <button class="px-3 py-2 rounded-md hover:bg-white/10 focus-outline" data-nav="home">Home</button>
+      <button class="px-3 py-2 rounded-md hover:bg-white/10 focus-outline" data-nav="members">Members</button>
+      <button class="px-3 py-2 rounded-md hover:bg-white/10 focus-outline" data-nav="science">Science</button>
+    </nav>
+  </div>
+</header>
+
+<!-- Main -->
+<main class="relative z-10">
+
+  <!-- HOME -->
+  <section id="home" class="page">
+    <!-- Hero -->
+    <div class="relative min-h-[60vh] flex items-center">
+      <div class="absolute inset-0 pointer-events-none">
+        <!-- BH hero art -->
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="eventHorizon" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#000"/>
+              <stop offset="60%" stop-color="#050515"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+          </defs>
+          <circle cx="420" cy="320" r="140" fill="url(#eventHorizon)"/>
+          <g opacity="0.8">
+            <!-- Accretion rings -->
+            <ellipse cx="420" cy="320" rx="200" ry="50" fill="none" stroke="rgba(255,255,255,0.15)"/>
+            <ellipse cx="420" cy="320" rx="218" ry="55" fill="none" stroke="rgba(255,255,255,0.14)"/>
+            <ellipse cx="420" cy="320" rx="236" ry="60" fill="none" stroke="rgba(255,255,255,0.12)"/>
+            <ellipse cx="420" cy="320" rx="254" ry="65" fill="none" stroke="rgba(255,255,255,0.10)"/>
+          </g>
+        </svg>
+        <!-- Gradient tuned so next section isn't hidden -->
+        <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.12), rgba(0,0,0,0.75));"></div>
+      </div>
+      <div class="relative z-10 max-w-6xl mx-auto px-4 py-20">
+        <h1 class="text-4xl md:text-6xl font-semibold tracking-tight text-white">
+          Black Holes • Strong Gravity • Relativistic Plasmas
+        </h1>
+        <p class="mt-4 max-w-2xl text-gray-200 text-lg">
+          We build predictive models of extreme environments using numerical relativity, GRMHD, and radiative transfer.
+        </p>
+        <div class="mt-6 flex gap-3">
+          <button class="rounded-xl px-4 py-2 text-white focus-outline"
+                  style="background-color: var(--ua-red);" data-nav="science">Our Science</button>
+          <button class="rounded-xl px-4 py-2 border border-white/20 hover:bg-white/10 text-white focus-outline"
+                  data-nav="members">Meet the Team</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Three pillars -->
+    <div class="relative z-20 max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4 -mt-16">
+      <div class="rounded-2xl p-5 border border-white/10 bg-gradient-to-b from-white/10 to-white/5">
+        <h3 class="font-semibold text-white">Numerical Relativity</h3>
+        <p class="mt-2 text-sm text-gray-300">We evolve Einstein’s equations in 3+1D to model mergers and dynamical spacetimes.</p>
+      </div>
+      <div class="rounded-2xl p-5 border border-white/10 bg-gradient-to-b from-white/10 to-white/5">
+        <h3 class="font-semibold text-white">GRMHD</h3>
+        <p class="mt-2 text-sm text-gray-300">Relativistic magnetized plasmas around BHs: accretion, jets, and flares.</p>
+      </div>
+      <div class="rounded-2xl p-5 border border-white/10 bg-gradient-to-b from-white/10 to-white/5">
+        <h3 class="font-semibold text-white">Multimessenger</h3>
+        <p class="mt-2 text-sm text-gray-300">We connect gravitational waves, EM radiation, and neutrinos with predictive models.</p>
+      </div>
+    </div>
+
+    <!-- Highlights -->
+    <section class="max-w-6xl mx-auto px-4 mt-20 space-y-10">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-semibold text-white">Recent Highlights</h2>
+        <p class="text-gray-300 mt-1">Preprints, results, and news from the group</p>
+      </div>
+      <div id="highlights" class="grid md:grid-cols-3 gap-6"></div>
+    </section>
+  </section>
+
+  <!-- MEMBERS -->
+  <section id="members" class="page hidden max-w-6xl mx-auto px-4 py-14">
+    <div class="mb-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-white">Members</h2>
+      <p class="text-gray-300 mt-1">People powering our science</p>
+    </div>
+    <div id="membersGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8"></div>
+  </section>
+
+  <!-- SCIENCE -->
+  <section id="science" class="page hidden max-w-6xl mx-auto px-4 py-14">
+    <div class="mb-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-white">Science</h2>
+      <p class="text-gray-300 mt-1">Projects, methods, and publications</p>
+    </div>
+
+    <div id="projectsGrid" class="grid md:grid-cols-2 gap-6"></div>
+
+    <div class="mt-12">
+      <h4 class="font-semibold text-white">Selected Publications</h4>
+      <ul id="pubList" class="mt-3 space-y-2 text-sm text-gray-300"></ul>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="mt-24 border-t border-white/10">
+  <div class="max-w-6xl mx-auto px-4 py-10 grid gap-6 md:grid-cols-3 text-sm">
+    <div>
+      <h4 class="font-semibold text-white mb-2">Arizona Relativity</h4>
+      <p class="text-gray-400">Exploring black holes, strong gravity, and relativistic plasmas through simulation and theory.</p>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white mb-2">Contact</h4>
+      <ul class="space-y-1 text-gray-300">
+        <li class="flex items-center gap-2"><i class="lucide-mail h-4 w-4"></i> contact@arizona-relativity.example</li>
+        <li class="flex items-center gap-2"><i class="lucide-github h-4 w-4"></i> github.com/arizona-relativity</li>
+        <li class="flex items-center gap-2"><i class="lucide-linkedin h-4 w-4"></i> linkedin.com/company/arizona-relativity</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white mb-2">Useful Links</h4>
+      <ul class="space-y-1">
+        <li class="flex items-center gap-2"><i class="lucide-book-open h-4 w-4"></i> <a class="hover:text-white text-gray-300" href="#">Publications</a></li>
+        <li class="flex items-center gap-2"><i class="lucide-newspaper h-4 w-4"></i> <a class="hover:text-white text-gray-300" href="#">Press</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center text-xs text-gray-500 pb-8">© <span id="year"></span> Arizona Relativity</div>
+</footer>
+
+<!-- Modal (backdrop is the container itself) -->
+<div id="modal" class="fixed inset-0 hidden items-center justify-center p-4 modal-backdrop">
+  <div id="modalPanel"
+       class="relative max-w-2xl w-full rounded-2xl border border-white/15 bg-neutral-900 p-6 shadow-2xl"
+       role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button id="modalCloseBtn"
+            class="absolute top-3 right-3 rounded-md px-2 py-1 text-sm border border-white/20 hover:bg-white/10 focus-outline">
+      Close
+    </button>
+    <h3 id="modalTitle" class="text-xl font-semibold text-white"></h3>
+    <p id="modalSubtitle" class="text-sm text-gray-300 mt-1"></p>
+    <div id="modalBody" class="mt-4 text-gray-200 text-sm leading-6"></div>
+    <div id="modalLinks" class="mt-4 flex flex-wrap gap-3 text-sm"></div>
+  </div>
+</div>
+
+<script>
+/* --------------------------
+   DATA (edit these)
+---------------------------*/
+const members = [
+  {
+    name: "Dr. Alex Kerr",
+    role: "PI • Associate Professor",
+    email: "alex.kerr@arizona-relativity.example",
+    bio: "Numerical relativity, horizon finding, and GW–EM connections in compact binaries.",
+    links: { github:"#", linkedin:"#", website:"#"}
+  },
+  {
+    name: "Sam Rivera",
+    role: "PhD Candidate",
+    email: "sam.rivera@arizona-relativity.example",
+    bio: "GRMHD of magnetically arrested disks and time-variable jet launching.",
+    links: { github:"#" }
+  },
+  {
+    name: "Min Park",
+    role: "Postdoc",
+    email: "min.park@arizona-relativity.example",
+    bio: "Radiative transfer and polarization modeling for EHT-relevant sources.",
+    links: { linkedin:"#" }
+  },
+  {
+    name: "Ivy Chen",
+    role: "Undergraduate Researcher",
+    email: "ivy.chen@arizona-relativity.example",
+    bio: "Accretion variability classification with ML on simulation light curves."
+  },
+  {
+    name: "Jordan Lee",
+    role: "Software Engineer",
+    email: "jordan.lee@arizona-relativity.example",
+    bio: "HPC workflows, CI for simulation pipelines, and data release tooling.",
+    links: { github:"#", website:"#"}
+  },
+];
+
+const projects = [
+  {
+    area: "GRMHD",
+    title: "Accretion & Jets around Spinning BHs",
+    desc: "Global simulations of MAD/SANE states across spins and tilts to map jet power and spectra.",
+    highlights: ["3D GRMHD with AMR", "Synchrotron spectra and polarization", "Jet variability vs. accretion states"],
+    more: "We survey spins a∈[0,0.99], explore tilt-induced precession, and connect jet power to magnetic flux threading the horizon.",
+    link: "#"
+  },
+  {
+    area: "Numerical Relativity",
+    title: "Binary Black Hole Spacetimes",
+    desc: "Coupled evolution of dynamical spacetimes and circumbinary disks to predict EM chirps.",
+    highlights: ["3+1 BSSNOK evolutions", "Torques & cavity dynamics", "Mock multi-band light curves"],
+    more: "We evolve inspiral phases with matter, track mini-disk feeding, and predict time-domain EM counterparts.",
+    link: "#"
+  },
+  {
+    area: "Radiative Transfer",
+    title: "From Fluid to Photons",
+    desc: "Fast polarized RT post-processing for EHT and time-domain predictions.",
+    highlights: ["GR ray tracing", "Polarization & Faraday effects", "GPU acceleration"],
+    more: "We implement efficient polarized transport and emission models to reproduce spectra, images, and variability.",
+    link: "#"
+  },
+  {
+    area: "Methods",
+    title: "Open Science & Software",
+    desc: "Reproducible pipelines, open datasets, and modular code for the community.",
+    highlights: ["Containers for HPC", "Analysis notebooks", "Data catalogs"],
+    more: "We package workflows for portability and publish datasets for reuse and benchmarking.",
+    link: "#"
+  },
+];
+
+const highlights = [
+  { tag:"GRMHD", title:"Jet launching in tilted disks",
+    blurb:"3D simulations show magnetic flux accumulation and intermittent jet power.",
+    more:"We find that tilt-enhanced magnetic flux transport seeds intermittent jet episodes tied to disk precession.",
+    link:"#"
+  },
+  { tag:"NR + RT", title:"Binary BH accretion signatures",
+    blurb:"Coupled spacetime evolution and RT predicts pre-merger EM chirps.",
+    more:"Mini-disk modulation imprints a chirped signature in mm–IR bands that tracks the GW phase.",
+    link:"#"
+  },
+  { tag:"Theory", title:"Plasma kinetics in EHT sources",
+    blurb:"Bridging fluid models with particle energization for Sgr A*.",
+    more:"Subgrid prescriptions calibrated to PIC studies reproduce spectral slopes and polarization fractions.",
+    link:"#"
+  },
+];
+
+const publications = [
+  "Doe, A., Smith, B., et al. (2025). Jet variability in magnetically arrested disks. <i>ApJ</i>. <a class='text-[color:var(--ua-red)] hover:underline' href='#'>arXiv:2501.01234</a>",
+  "Rao, K., Lee, M., et al. (2024). Radiative signatures of SMBBH accretion. <i>MNRAS</i>. <a class='text-[color:var(--ua-red)] hover:underline' href='#'>arXiv:2411.04567</a>",
+];
+
+/* --------------------------
+   RENDERING
+---------------------------*/
+function byId(id){ return document.getElementById(id); }
+
+function renderMembers(){
+  const grid = byId("membersGrid");
+  grid.innerHTML = "";
+  members.forEach((m, i) => {
+    const card = document.createElement("button");
+    card.className = "text-left rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition w-full focus-outline";
+    card.setAttribute("aria-label", `Open details for ${m.name}`);
+    card.onclick = () => openMemberModal(i);
+    card.innerHTML = `
+      <div class="flex items-center gap-4">
+        <div class="h-16 w-16 rounded-full"
+             style="background: linear-gradient(135deg, var(--ua-blue), var(--ua-red));"></div>
+        <div>
+          <h3 class="font-semibold text-white">${m.name}</h3>
+          <p class="text-sm text-gray-300">${m.role ?? ""}</p>
+          <p class="text-xs text-gray-400">${m.email ?? ""}</p>
+        </div>
+      </div>
+      <p class="mt-4 text-sm text-gray-300 leading-relaxed">${m.bio ?? ""}</p>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function renderProjects(){
+  const grid = byId("projectsGrid");
+  grid.innerHTML = "";
+  projects.forEach((p, i) => {
+    const card = document.createElement("button");
+    card.className = "relative text-left rounded-2xl overflow-hidden border border-white/10 bg-white/5 hover:bg-white/10 transition w-full focus-outline";
+    card.setAttribute("aria-label", `Open details for ${p.title}`);
+    card.onclick = () => openProjectModal(i);
+    card.innerHTML = `
+      <div class="h-40 relative">
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 600 240" preserveAspectRatio="none">
+          <circle cx="180" cy="120" r="38" fill="#000" />
+          <ellipse cx="180" cy="120" rx="140" ry="28" fill="none" stroke="rgba(255,255,255,0.15)" />
+          <ellipse cx="180" cy="120" rx="180" ry="40" fill="none" stroke="rgba(255,255,255,0.12)" />
+          <ellipse cx="180" cy="120" rx="220" ry="54" fill="none" stroke="rgba(255,255,255,0.08)" />
+          <circle cx="180" cy="120" r="120" fill="url(#disk)" />
+        </svg>
+        <div class="absolute inset-0"
+             style="background: linear-gradient(135deg, rgba(12,35,75,.35), rgba(171,5,32,.25));"></div>
+      </div>
+      <div class="p-5">
+        <div class="text-xs uppercase tracking-widest" style="color: rgba(171,5,32,0.8)">${p.area ?? ""}</div>
+        <h3 class="font-semibold text-white mt-1">${p.title}</h3>
+        <p class="text-sm text-gray-300 mt-2 leading-relaxed">${p.desc ?? ""}</p>
+        <ul class="mt-4 text-sm text-gray-300 list-disc pl-5 space-y-1">
+          ${(p.highlights || []).map(h => `<li>${h}</li>`).join("")}
+        </ul>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+function renderHighlights(){
+  const grid = byId("highlights");
+  grid.innerHTML = "";
+  highlights.forEach((h, i) => {
+    const btn = document.createElement("button");
+    btn.className = "group rounded-2xl border border-white/10 p-5 bg-white/5 hover:bg-white/10 transition-colors text-left focus-outline w-full";
+    btn.onclick = () => openHighlightModal(i);
+    btn.innerHTML = `
+      <div class="text-xs uppercase tracking-widest" style="color: rgba(171,5,32,0.8)">${h.tag}</div>
+      <h3 class="mt-1 font-semibold text-white">${h.title}</h3>
+      <p class="mt-2 text-gray-300 text-sm">${h.blurb}</p>
+      <div class="mt-3 text-sm text-[color:var(--ua-red)] underline underline-offset-4">Read more</div>
+    `;
+    grid.appendChild(btn);
+  });
+}
+
+function renderPubs(){
+  const ul = byId("pubList");
+  ul.innerHTML = publications.map(p => `<li>${p}</li>`).join("");
+}
+
+/* --------------------------
+   MODAL HANDLERS
+---------------------------*/
+function openMemberModal(i){
+  const m = members[i];
+  byId("modalTitle").textContent = m.name;
+  byId("modalSubtitle").textContent = `${m.role ?? ""}${m.email ? " • " + m.email : ""}`;
+  byId("modalBody").innerHTML = `<p>${m.bio ?? ""}</p>`;
+  const links = byId("modalLinks");
+  links.innerHTML = "";
+  if(m.links){
+    if(m.links.website) links.innerHTML += `<a class="underline text-[color:var(--ua-red)]" target="_blank" rel="noopener" href="${m.links.website}">Website</a>`;
+    if(m.links.github) links.innerHTML += `<a class="underline text-[color:var(--ua-red)]" target="_blank" rel="noopener" href="${m.links.github}">GitHub</a>`;
+    if(m.links.linkedin) links.innerHTML += `<a class="underline text-[color:var(--ua-red)]" target="_blank" rel="noopener" href="${m.links.linkedin}">LinkedIn</a>`;
+    if(m.links.scholar) links.innerHTML += `<a class="underline text-[color:var(--ua-red)]" target="_blank" rel="noopener" href="${m.links.scholar}">Google Scholar</a>`;
+  }
+  showModal();
+}
+
+function openProjectModal(i){
+  const p = projects[i];
+  byId("modalTitle").textContent = p.title;
+  byId("modalSubtitle").textContent = p.area ?? "";
+  const body = [];
+  body.push(`<p>${p.desc ?? ""}</p>`);
+  if(p.more) body.push(`<p class="mt-2">${p.more}</p>`);
+  if(p.highlights?.length){
+    body.push(`<ul class="mt-3 list-disc pl-5">${p.highlights.map(h => `<li>${h}</li>`).join("")}</ul>`);
+  }
+  byId("modalBody").innerHTML = body.join("");
+  const links = byId("modalLinks");
+  links.innerHTML = p.link ? `<a class="underline text-[color:var(--ua-red)]" target="_blank" rel="noopener" href="${p.link}">Learn more</a>` : "";
+  showModal();
+}
+
+function openHighlightModal(i){
+  const h = highlights[i];
+  byId("modalTitle").textContent = h.title;
+  byId("modalSubtitle").textContent = h.tag ?? "";
+  const body = [];
+  body.push(`<p>${h.blurb ?? ""}</p>`);
+  if(h.more) body.push(`<p class="mt-2">${h.more}</p>`);
+  byId("modalBody").innerHTML = body.join("");
+  const links = byId("modalLinks");
+  links.innerHTML = h.link ? `<a class="underline text-[color:var(--ua-red)]" target="_blank" rel="noopener" href="${h.link}">Learn more</a>` : "";
+  showModal();
+}
+
+function showModal(){
+  const m = byId("modal");
+  m.classList.remove("hidden");
+  m.classList.add("flex");
+  document.body.classList.add("no-scroll");
+}
+function closeModal(){
+  const m = byId("modal");
+  m.classList.add("hidden");
+  m.classList.remove("flex");
+  document.body.classList.remove("no-scroll");
+}
+
+/* --------------------------
+   SIMPLE NAV (show/hide sections)
+---------------------------*/
+function showPage(id){
+  document.querySelectorAll(".page").forEach(p => p.classList.add("hidden"));
+  byId(id).classList.remove("hidden");
+  document.querySelectorAll("[data-nav]").forEach(btn=>{
+    if(btn.getAttribute("data-nav")===id) btn.classList.add("bg-white/10");
+    else btn.classList.remove("bg-white/10");
+  });
+}
+
+/* --------------------------
+   INIT + EVENT LISTENERS
+---------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+  // nav
+  document.querySelectorAll("[data-nav]").forEach(btn=>{
+    btn.addEventListener("click", () => showPage(btn.getAttribute("data-nav")));
+  });
+  // footer year
+  const y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+
+  // modal close events
+  const modal = byId("modal");
+  const panel = byId("modalPanel");
+  const closeBtn = byId("modalCloseBtn");
+  if (modal) modal.addEventListener("click", closeModal);
+  if (panel) panel.addEventListener("click", (e)=> e.stopPropagation());
+  if (closeBtn) closeBtn.addEventListener("click", closeModal);
+  document.addEventListener("keydown", (e)=> { if(e.key === "Escape") closeModal(); });
+
+  // render content
+  renderMembers();
+  renderProjects();
+  renderHighlights();
+  renderPubs();
+  showPage("home");
+});
+</script>
+</body>
+</html>
