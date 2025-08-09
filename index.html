@@ -30,8 +30,11 @@
     content:""; position:fixed; inset:0; z-index:-3;
     background:
       radial-gradient(1200px 600px at 15% 25%, rgba(12,35,75,0.55), transparent 50%),
-      radial-gradient(900px 500px at 85% 30%, rgba(171,5,32,0.45), transparent 50%),
-      radial-gradient(800px 500px at 40% 80%, rgba(12,35,75,0.50), transparent 50%);
+      radial-gradient(800px 500px at 40% 80%, rgba(12,35,75,0.50), transparent 50%),
+      /* radial-gradient(1200px 600px at 15% 25%, rgba(171,5,32,0.45), transparent 50%); */
+
+      radial-gradient(900px 500px at 85% 30%, rgba(171,5,32,0.45), transparent 50%);
+      /* radial-gradient(800px 500px at 40% 80%, rgba(171,5,32,0.45), transparent 50%); */
   }
   body::after{
     content:""; position:fixed; inset:0; z-index:-2; opacity:.50;
@@ -47,6 +50,8 @@
 
   .btn-primary{ background-color:var(--ua-red); color:#fff; }
   .btn-primary:hover{ background-color:#c20b26; }
+  .btn-secondary{ background-color:var(--ua-blue); color:#fff; }
+  .btn-secondary:hover{ background-color: #00294F; }
   .btn-ghost{ border:1px solid rgba(255,255,255,.18); color:#fff; }
   .btn-ghost:hover{ background:rgba(255,255,255,.08); }
 
@@ -92,26 +97,14 @@
           </p>
           <div class="mt-6 flex gap-3">
             <button type="button" class="btn-primary rounded-xl px-4 py-2" data-nav="science">Our Science</button>
-            <button type="button" class="btn-ghost rounded-xl px-4 py-2" data-nav="members">Meet the Team</button>
+            <button type="button" class="btn-secondary rounded-xl px-4 py-2" data-nav="members">Meet the Team</button>
           </div>
         </div>
       </div>
 
       <!-- Pillars -->
-      <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4 -mt-4">
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <h3 class="font-semibold text-white">Numerical Relativity</h3>
-          <p class="mt-2 text-sm text-gray-300">3+1 evolutions of dynamical spacetimes, compact mergers, and modified gravity.</p>
-        </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <h3 class="font-semibold text-white">GRMHD</h3>
-          <p class="mt-2 text-sm text-gray-300">Accretion flows, jets, and variability near binary black holes.</p>
-        </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <h3 class="font-semibold text-white">Radiation</h3>
-          <p class="mt-2 text-sm text-gray-300">Connecting GW signals with EM counterparts and spectra.</p>
-        </div>
-      </div>
+      <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4 -mt-4" id="pillarsGrid"></div>
+
 
       <!-- Highlights (on top + extra bottom padding) -->
       <section class="relative z-10 max-w-6xl mx-auto px-4 mt-14 pb-24">
@@ -205,7 +198,7 @@ const members = [
         role:"PhD Candidate", 
         email:"vik@arizona.edu",
         bio:"Binary Black Hole Accretion, Multimessenger Astronomy, Jet Emission", 
-        links:{ linkedin:"#"} 
+        links:{Publications:"https://ui.adsabs.harvard.edu/search/q=author%3A%22Manikantan%2C%20Vikram%22", GitHub:"https://github.com/vikrammanikantan", "Personal Website":"https://www.vikrammanikantan.com"} 
     },
 ];
 
@@ -254,6 +247,53 @@ const highlights = [
         link:"#"
     },
 ];
+
+const pillars = [
+  {
+    tag: "Numerical Relativity",
+    blurb: "Solving Einstein’s equations on a computer to model dynamical spacetimes.",
+    details: `
+      <p><strong>What it is:</strong> Numerical Relativity solves Einstein’s field equations using
+      supercomputers. We discretize spacetime (3+1 split) and evolve it in time to study strong-gravity
+      events like black hole or neutron star mergers.</p>
+      <p class="mt-2"><strong>Why it matters:</strong> It predicts the precise gravitational waveforms
+      detected by LIGO/Virgo/KAGRA and provides the spacetime “stage” on which gas and light move.</p>
+      <ul class="mt-3 list-disc pl-5">
+        <li>3+1 formulations (BSSN/CCZ4)</li>
+        <li>Horizon finding & remnant properties</li>
+        <li>Coupling to matter/radiation models</li>
+      </ul>
+    `
+  },
+  {
+    tag: "GRMHD",
+    blurb: "General-relativistic magnetohydrodynamics of disks and jets around black holes.",
+    details: `
+      <p><strong>What it is:</strong> GRMHD models the plasma flowing near black holes, including magnetic
+      fields, shocks, and turbulence—<em>all in curved spacetime</em>.</p>
+      <p class="mt-2"><strong>Why it matters:</strong> It explains how accretion disks feed black holes and
+      how magnetic fields extract spin energy to power relativistic jets.</p>
+      <ul class="mt-3 list-disc pl-5">
+        <li>MAD vs SANE accretion states</li>
+        <li>Jet launching & variability</li>
+        <li>Polarization & radiative transfer links to EHT</li>
+      </ul>
+    `
+  },
+  {
+    tag: "Radiation",
+    blurb: "Connecting gravitational waves with electromagnetic and neutrino signals by modeling their emission.",
+    details: `
+      <p><strong>What it is:</strong> Blurb</p>
+      <p class="mt-2"><strong>Why it matters:</strong> Blurb. </p>
+      <ul class="mt-3 list-disc pl-5">
+        <li>Application 1 </li>
+        <li>Application 2 </li>
+      </ul>
+    `
+  }
+];
+
 
 const publications = [
   "Doe, A. et al. (2025). Jet variability in MAD disks. <i>ApJ</i>. <a class='text-[color:var(--ua-red)] hover:underline' href='#'>arXiv:2501.01234</a>",
@@ -331,6 +371,26 @@ function renderPubs(){
   $("pubList").innerHTML = publications.map(p=>`<li>${p}</li>`).join("");
 }
 
+function renderPillars(){
+  const grid = document.getElementById("pillarsGrid");
+  if (!grid) return;
+  grid.innerHTML = "";
+  pillars.forEach((p, i) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    // Use your card style; swap to "card" if you added that utility class
+    btn.className = "text-left rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition";
+    btn.addEventListener("click", ()=> openPillarModal(i));
+    btn.innerHTML = `
+      <div class="text-xs uppercase tracking-widest" style="color: rgba(171,5,32,0.85)">${p.tag}</div>
+      <p class="mt-2 text-sm text-gray-300">${p.blurb}</p>
+      <div class="mt-3 text-sm text-[color:var(--ua-red)] underline underline-offset-4">Learn more</div>
+    `;
+    grid.appendChild(btn);
+  });
+}
+
+
 /* ===== MODAL ===== */
 function showModal(){
   const m = $("modal");
@@ -370,6 +430,16 @@ function openHighlightModal(i){
   $("modalLinks").innerHTML = h.link ? `<a class="underline text-[color:var(--ua-red)]" target="_blank" rel="noopener" href="${h.link}">Learn more</a>` : "";
   showModal();
 }
+
+function openPillarModal(i){
+  const p = pillars[i];
+  document.getElementById("modalTitle").textContent = p.tag;
+  document.getElementById("modalSubtitle").textContent = ""; // optional subtitle
+  document.getElementById("modalBody").innerHTML = p.details;
+  document.getElementById("modalLinks").innerHTML = ""; // add links if you like
+  showModal();
+}
+
 
 /* ===== NAV with hash routing (back/forward support) ===== */
 // Active state
@@ -411,6 +481,18 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
   // Initial route
   const initial = location.hash ? location.hash.slice(1) : "home";
+  showPage(initial);
+  if (!location.hash) history.replaceState({page: initial}, "", "#" + initial);
+
+  // Render content
+  renderPillars();
+  renderMembers();
+  renderProjects();
+  renderHighlights();
+  renderPubs?.();
+
+  // Initial route
+  initial = location.hash ? location.hash.slice(1) : "home";
   showPage(initial);
   if (!location.hash) history.replaceState({page: initial}, "", "#" + initial);
 });
