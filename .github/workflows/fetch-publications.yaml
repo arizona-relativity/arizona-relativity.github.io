@@ -34,15 +34,14 @@ jobs:
           # Build final query (use ORCIDS by default)
           QUERY="(${OR_QUERY})"
 
-          FIELDS="bibcode,author,title,year,bibstem,doi,arxiv_eprint"
-          URL="https://api.adsabs.harvard.edu/v1/search/query?q=$(python3 - <<PY
-import urllib.parse, os
-print(urllib.parse.quote(os.environ['QUERY']))
-PY
-)&fl=$FIELDS&sort=date%20desc&rows=40"
+FIELDS="bibcode,author,title,year,bibstem,doi,arxiv_eprint"
 
-          curl -sS -H "Authorization: Bearer $ADS_API_TOKEN" "$URL" \
+ENCODED_QUERY=$(jq -rn --arg q "$QUERY" '$q|@uri')
+URL="https://api.adsabs.harvard.edu/v1/search/query?q=$ENCODED_QUERY&fl=$FIELDS&sort=date%20desc&rows=40"
+
+curl -sS -H "Authorization: Bearer $ADS_API_TOKEN" "$URL" \
   | jq '{response:{docs:.response.docs}}' > data/publications.json
+
 
 
       - name: Commit changes
