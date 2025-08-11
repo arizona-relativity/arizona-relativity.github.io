@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>COMPASS</title>
+
+<!-- Tailwind (CDN) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Proxima Nova (same kit as main site) -->
+<style>@import url("https://use.typekit.net/qke6kvg.css");</style>
+
+<style>
+  :root{
+    --ua-red:#AB0520;
+    --ua-blue:#002147;
+  }
+  html, body { font-family:"proxima-nova","Proxima Nova",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+  html { scroll-behavior: smooth; }
+  /* keep content clear of sticky header */
+  section[id] { scroll-margin-top: 88px; }
+
+  body{ background:#000; color:#d1d5db; }
+  /* UA blobs + subtle stars */
+  body::before{
+    content:""; position:fixed; inset:0; z-index:-3;
+    background:
+      radial-gradient(900px 500px at 15% 25%, rgba(12,35,75,0.55), transparent 50%),
+      radial-gradient(800px 450px at 40% 80%, rgba(12,35,75,0.50), transparent 50%),
+      radial-gradient(850px 450px at 85% 30%, rgba(171,5,32,0.45), transparent 50%),
+      radial-gradient(700px 400px at 20% 60%, rgba(12,35,75,0.45), transparent 50%),
+      radial-gradient(750px 420px at 65% 85%, rgba(12,35,75,0.40), transparent 50%),
+      radial-gradient(780px 420px at 80% 55%, rgba(171,5,32,0.40), transparent 50%),
+      rgba(0,0,0,0.25);
+  }
+  body::after{
+    content:""; position:fixed; inset:0; z-index:-2; opacity:.45;
+    background-image:
+      radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,.8) 50%, transparent 51%),
+      radial-gradient(1px 1px at 30% 42%, rgba(255,255,255,.6) 50%, transparent 51%),
+      radial-gradient(1px 1px at 68% 28%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1px 1px at 52% 78%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1px 1px at 88% 60%, rgba(255,255,255,.8) 50%, transparent 51%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 85%);
+            mask-image: radial-gradient(ellipse at center, black 60%, transparent 85%);
+  }
+
+  a { color: var(--ua-blue); text-decoration: underline; font-weight:600; }
+  a:hover { color: var(--ua-red); text-decoration: none; text-underline-offset: 3px; }
+  nav a {
+    text-decoration: none;
+  }
+
+  .card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 1rem;
+  }
+</style>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 border-b border-white/10 backdrop-blur bg-black/60">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 text-white" data-nav>
+        <div class="h-7 w-7 rounded-full shadow"
+             style="background: radial-gradient(60% 60% at 40% 40%, var(--ua-blue), transparent 70%), conic-gradient(from 120deg at 50% 50%, var(--ua-red), var(--ua-blue));"></div>
+        <span class="font-bold tracking-wide">COMPASS</span>
+      </a>
+
+      <nav class="flex flex-wrap gap-1 text-sm">
+        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#home">Home</a>
+        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#materials">Materials</a>
+        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#contact">Contact</a>
+        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#schedule">Schedule</a>
+        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#faq">FAQ</a>
+      </nav>
+
+      <a href="index.html"
+         class="hidden sm:inline-flex items-center gap-2 px-3 py-2 rounded-md border border-white/15 bg-white/5 hover:bg-white/10 text-sm">
+        ← Back to Arizona Relativity
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-1">
+
+    <!-- HOME: banner above title -->
+    <section id="home" class="page">
+      <div class="max-w-5xl mx-auto px-4 pt-8">
+        <div class="card overflow-hidden">
+          <img src="assets/img/compass/cosmic_cliffs.png" alt="Banner Image" class="w-full h-[300px] object-cover object-center"/>
+        </div>
+      </div>
+      <div class="max-w-5xl mx-auto px-4 py-10">
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-wider" style="letter-spacing:4px">COMPASS</h1>
+      </div>
+
+      <!-- About (content unchanged) -->
+      <section id="about" class="max-w-5xl mx-auto px-4">
+        <div class="card p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-3">About</h2>
+          <p class="mb-4">The <strong>Co</strong>mputational and <strong>M</strong>athematical <strong>P</strong>rogram for incoming <strong>A</strong>rizona <strong>S</strong>cience <strong>S</strong>tudents is a new UArizona initiative aimed at smoothing the transition of students from high school to college, helping them succeed in their studies, and increasing equitable access and retention in STEM fields. The workshops are open to everyone, but incoming undergraduate students and rising sophomores are the main target group. There are two types of COMPASS workshops offered: the first is a week-long workshop on the fundamentals of computation that takes place the week before the Fall semester. The second series of workshops are on math preparation where students are trained in algebra, geometry and pre-calculus. </p>
+          <p>COMPASS is supported by National Science Foundation CAREER grant No. 2145421 to PI Paschalidis.</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- MATERIALS (content unchanged) -->
+    <section id="materials" class="page">
+      <div class="max-w-5xl mx-auto px-4 py-10">
+        <div class="card p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-3">Materials</h2>
+          <p class="mb-3">
+            You can find all program materials at this <a href="https://github.com/vikrammanikantan/compass" target="_blank">GitHub repository</a>
+          </p>
+          <p>
+            Additionally, we provide 'work-along' python notebooks for
+            <a href="https://colab.research.google.com/drive/1Usb8Kb2WwW-CPDYKnxulZc0f7beIYsDT" target="_blank">Python basics</a>,
+            <a href="https://colab.research.google.com/drive/1QNzVruPZmIiatEZeYDB3AjEj0Ao0ZSc2" target="_blank">data visualization</a>,
+            and <a href="https://colab.research.google.com/drive/1WHS9M9AlXhB3YoKsWB_pcgGCrGd2OF8c" target="_blank">debugging</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (content unchanged) -->
+    <section id="contact" class="page">
+      <div class="max-w-5xl mx-auto px-4 py-10">
+        <div class="card p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-3">Contact Us</h2>
+          <p>For more information, please reach out to us at:</p>
+          <p><a href="https://astro.arizona.edu/person/vasileios-vasilis-paschalidis" target="_blank">Professor Vasileois Paschalidis</a>: vpaschal@arizona.edu</p>
+          <p><a href="https://w3.physics.arizona.edu/people/erik-wessel" target="_blank">Erik Wessel</a>: ekwessel@arizona.edu</p>
+          <p><a href="https://astro.arizona.edu/person/vikram-manikantan" target="_blank">Vikram Manikantan</a>: vik@arizona.edu</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCHEDULE (content unchanged) -->
+    <section id="schedule" class="page">
+      <div class="max-w-5xl mx-auto px-4 py-10">
+        <div class="card p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-3">Schedule</h2>
+
+          <h3 class="text-xl font-semibold mb-1">Monday [<a href="https://arizona.box.com/s/d7zgjzjh76fwftvv7j370hrovdskiv2n">recording</a>]</h3>
+          <p><em>10am-10:30am:</em> Introductions & Pre-workshop survey</p>
+          <p><em>10:30am-noon:</em> Intro to Python with Hands-on Experience</p>
+          <p><em>noon-1pm:</em> Lunch (provided)</p>
+          <p class="mb-4"><em>1pm-2pm:</em> Python Hands-on experience</p>
+
+          <h3 class="text-xl font-semibold mb-1">Tuesday [<a href="https://arizona.box.com/s/63xgfwsuoyznz0rh7c1i26zb8y1etkbh">recording</a>]</h3>
+          <p><em>10am-11am:</em> Python Loops & Functions</p>
+          <p><em>11am-noon:</em> Data Visualization with Matplotlib & Numpy</p>
+          <p><em>noon-1pm:</em> Lunch (provided)</p>
+          <p class="mb-4"><em>1pm-2pm:</em> Data Visualization Continued</p>
+
+          <h3 class="text-xl font-semibold mb-1">Wednesday [<a href="https://arizona.box.com/s/35a2wawuo16zqfapwnob1fedtk5j3x24">recording</a>]</h3>
+          <p><em>10am-11am:</em> Intro to Linux (pdf notes will be provided)</p>
+          <p><em>10:30am-noon:</em> Bash scripting 1</p>
+          <p><em>noon-1pm:</em> Lunch (provided)</p>
+          <p class="mb-4"><em>1pm-2pm:</em> Bash scripting 2</p>
+
+          <h3 class="text-xl font-semibold mb-1">Thursday [<a href="https://arizona.box.com/s/dfrsaziv2kbcgeyc8kwx8q2bbkvdzmdl">recording</a>]</h3>
+          <p><em>10am-11:15am:</em> Bash Scripting 3</p>
+          <p><em>11:15am-noon:</em> Hands-on with HPC 1</p>
+          <p><em>noon-1pm:</em> Lunch (provided)</p>
+          <p class="mb-4"><em>1pm-2pm:</em> Hands-on with HPC 2</p>
+
+          <h3 class="text-xl font-semibold mb-1">Friday</h3>
+          <p><em>10am-11am:</em> Github Basics</p>
+          <p><em>11am-11:45am:</em> Latex and Overleaf</p>
+          <p><em>11:45am-noon:</em> post-workshop survey</p>
+          <p> End! </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (content unchanged) -->
+    <section id="faq" class="page mb-16">
+      <div class="max-w-5xl mx-auto px-4 py-10">
+        <div class="card p-6 md:p-8">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-3">Frequently Asked Questions</h2>
+
+          <h3 class="text-lg font-semibold">Is it okay if I have next to no coding/programming knowledge?</h3>
+          <p class="mb-4">It is perfectly fine if you have no prior coding/programming experience.</p>
+
+          <h3 class="text-lg font-semibold">Do we have to pay anything to attend this workshop?</h3>
+          <p class="mb-4">No, the workshop is free.</p>
+
+          <h3 class="text-lg font-semibold">Would it be possible to join only 1 or 2 days of the workshop?</h3>
+          <p class="mb-4">The workshops are interrelated, so if you miss one you might not be able to follow. We will record the sessions and send you the links, so you can watch them and catch up with the rest of the group.</p>
+
+          <h3 class="text-lg font-semibold">Will I need to have a machine running Linux?</h3>
+          <p class="mb-4">No, you will not. However, if you have a Linux machine that may make some things easier for you.</p>
+
+          <h3 class="text-lg font-semibold">Will I have to download any software beforehand?</h3>
+          <p class="mb-4">You should not need any software installed beforehand.</p>
+
+          <h3 class="text-lg font-semibold">Would it be possible to still receive the notes from the workshop even if we cannot attend the Zoom?</h3>
+          <p class="mb-4">Yes, we will provide posts on the COMPASS website (soon to go live) with whatever notes we have.</p>
+
+          <h3 class="text-lg font-semibold">Will this be a watch and learn experience, or will there be practice work given out to test what we've learned?</h3>
+          <p class="mb-4">It will be both watch and learn and hands-on experience.</p>
+
+          <h3 class="text-lg font-semibold">Does the type of computer matter? Especially as someone planning on doing research in this field, is there a particular computer that is best?</h3>
+          <p class="mb-4">No, it does not. What you will need is a computer that can connect to the World Wide Web and can have a web browser. Therefore, no particular computer is better than another.</p>
+
+          <h3 class="text-lg font-semibold">Can I attend part of the workshop over Zoom and the rest in person?</h3>
+          <p class="mb-4">Yes, you can.</p>
+
+          <h3 class="text-lg font-semibold">Is it okay if I miss part of a session for my move-in day?</h3>
+          <p class="mb-4">Yes, it is okay. We will record the workshops and send them over email so you can catch up on things you have missed.</p>
+
+          <h3 class="text-lg font-semibold">Will there be certifications?</h3>
+          <p>No certifications will be given for your participation. Moreover, these workshops are only introductory, and we are not authorized to provide any kind of certification.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-black/70">
+    <div class="max-w-5xl mx-auto px-4 py-8 text-sm flex items-center justify-between text-gray-400">
+      <div>COMPASS &copy; 2024</div>
+      <div class="flex gap-2">
+        <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" href="#materials" data-nav>Materials</a>
+        <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" href="#contact" data-nav>Contact</a>
+        <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" href="#faq" data-nav>FAQ</a>
+      </div>
+    </div>
+  </footer>
+
+<script>
+/* Smooth scrolling is CSS; this just highlights the active nav link as you scroll */
+document.addEventListener("DOMContentLoaded", () => {
+  const links = Array.from(document.querySelectorAll('a[data-nav]'));
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+
+  const linkById = new Map(links.map(a => [a.getAttribute('href').replace('#',''), a]));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      const link = linkById.get(id);
+      if (!link) return;
+      if (entry.isIntersecting) {
+        links.forEach(l => l.classList.remove('bg-white/10'));
+        link.classList.add('bg-white/10');
+        history.replaceState(null, "", "#"+id);
+      }
+    });
+  }, { root: null, rootMargin: "0px 0px -40% 0px", threshold: 0.6 });
+
+  sections.forEach(sec => io.observe(sec));
+
+  // If loading with a hash, scroll into view (smooth handled by CSS)
+  if (location.hash) {
+    const el = document.querySelector(location.hash);
+    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+});
+</script>
+
+</body>
+</html>
