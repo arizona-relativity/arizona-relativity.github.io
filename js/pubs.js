@@ -28,7 +28,7 @@ function toItemHTML(doc) {
 
 
 
-export async function renderPubsFromJSON(jsonPath = "publications.json"){
+export async function renderPubsFromJSON(jsonPath = "data/publications.json"){
   const ul = document.getElementById("pubList");
   if (!ul) return;
   ul.innerHTML = "<li>Loading…</li>";
