@@ -134,7 +134,7 @@ const pillars = [
                     <li>Coupling to matter/radiation models</li>
                 </ul>
                 `,
-        image: "assets/img/pillars/numerical-relativity.jpg",
+        image: "img/pillars/numerical-relativity.jpg",
         imageAlt: "Numerical relativity visualization"
     },
     {
@@ -142,16 +142,14 @@ const pillars = [
         blurb: "General-relativistic magnetohydrodynamics of disks and jets around black holes.",
         details: `
                 <p><strong>What it is:</strong> GRMHD models the plasma flowing near black holes, including magnetic
-                fields, shocks, and turbulence—<em>all in curved spacetime</em>.</p>
-                <p class="mt-2"><strong>Why it matters:</strong> It explains how accretion disks feed black holes and
-                how magnetic fields extract spin energy to power relativistic jets.</p>
+                fields, shocks, and turbulence— all in curved spacetime.</p>
+                <p class="mt-2"><strong>Why it matters:</strong> why it matters.</p>
                 <ul class="mt-3 list-disc pl-5">
-                    <li>MAD vs SANE accretion states</li>
-                    <li>Jet launching & variability</li>
-                    <li>Polarization & radiative transfer links to EHT</li>
+                    <li>Application 1</li>
+                    <li>Application 2</li>
                 </ul>
                 `,
-        image: "assets/img/pillars/grmhd.jpg",
+        image: "img/pillars/grmhd.png",
         imageAlt: "GRMHD simulation"
     },
     {

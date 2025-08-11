@@ -39,15 +39,19 @@ function renderMembers() {
 }
 
 function headerBlock(src, alt, hClass = "h-36") {
-    return `
-            <div class="w-full ${hClass} relative overflow-hidden">
-            <div class="absolute inset-0 header-placeholder"></div>
-            ${src ? `<img src="${src}" alt="${alt || ''}"
-                class="block w-full h-full object-cover"
-                onerror="this.style.display='none';">` : ``}
-            </div>
-        `;
+  return `
+    <div class="w-full ${hClass} relative overflow-hidden">
+      <div class="absolute inset-0 header-placeholder"></div>
+      ${src ? `
+        <img src="${src}" alt="${alt || ''}"
+             class="block w-full h-full object-cover"
+             onload="this.previousElementSibling.style.display='none';"
+             onerror="this.style.display='none'; this.previousElementSibling.style.display='block';">
+      ` : ``}
+    </div>
+  `;
 }
+
 
 function renderProjects() {
     const grid = $("projectsGrid"); grid.innerHTML = "";
