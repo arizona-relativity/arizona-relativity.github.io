@@ -6,7 +6,7 @@ function fmtLink(url, label){
 function toItemHTML(doc){
   const title  = Array.isArray(doc.title) ? doc.title[0] : (doc.title || "Untitled");
   const year   = doc.year || "";
-  const journal= doc.bibstem ? `<i>${doc.bibstem[1]}</i>` : "";
+  const journal= doc.bibstem ? `<i>${doc.bibstem}</i>` : "";
   const doiURL = doc.doi?.[0] ? `https://doi.org/${doc.doi[0]}` : null;
   const axURL  = doc.arxiv_eprint ? `https://arxiv.org/abs/${doc.arxiv_eprint}` : null;
   const fallback = doc.bibcode ? `https://ui.adsabs.harvard.edu/abs/${doc.bibcode}/abstract` : "#";
