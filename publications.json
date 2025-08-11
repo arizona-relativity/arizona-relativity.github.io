@@ -1,0 +1,427 @@
+{
+  "response": {
+    "docs": [
+      {
+        "bibcode": "2025ApJ...984L..47M",
+        "author": [
+          "Manikantan, Vikram",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "ApJL",
+          "ApJL..984"
+        ],
+        "doi": [
+          "10.3847/2041-8213/adccb8",
+          "10.48550/arXiv.2411.11955"
+        ],
+        "title": [
+          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025PhRvD.111j4031S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104031",
+          "10.48550/arXiv.2411.11960"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025PhRvD.111j4032S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104032",
+          "10.48550/arXiv.2412.01881"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2024PhRvD.110d3002R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.043002",
+          "10.48550/arXiv.2312.14046"
+        ],
+        "title": [
+          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
+        ],
+        "year": "2024"
+      },
+      {
+        "bibcode": "2024PhRvD.110d4037N",
+        "author": [
+          "Naseri, Mahdi",
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.044037",
+          "10.48550/arXiv.2406.15544"
+        ],
+        "title": [
+          "Exploring pathways to forming twin stars"
+        ],
+        "year": "2024"
+      },
+      {
+        "bibcode": "2023PhRvD.108h3029R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.083029",
+          "10.48550/arXiv.2306.13144"
+        ],
+        "title": [
+          "Influence of stellar compactness on finite-temperature effects in neutron star merger simulations"
+        ],
+        "year": "2023"
+      },
+      {
+        "bibcode": "2023PhRvD.108f3018C",
+        "author": [
+          "Cai, Yangyang",
+          "Gralla, Samuel E.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.063018",
+          "10.48550/arXiv.2209.07469"
+        ],
+        "title": [
+          "Dynamics of ultrarelativistic charged particles with strong radiation reaction. I. Aristotelian equilibrium state"
+        ],
+        "year": "2023"
+      },
+      {
+        "bibcode": "2023PhRvD.108f4010B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.064010",
+          "10.48550/arXiv.2309.04368"
+        ],
+        "title": [
+          "Can quasicircular mergers of charged black holes produce extremal black holes?"
+        ],
+        "year": "2023"
+      },
+      {
+        "bibcode": "2023PhRvD.107l3031W",
+        "author": [
+          "Wessel, Erik",
+          "Paschalidis, Vasileios",
+          "Tsokaros, Antonios",
+          "Ruiz, Milton",
+          "Shapiro, Stuart L."
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.107"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.107.123031",
+          "10.48550/arXiv.2304.07282"
+        ],
+        "title": [
+          "Effect of magnetic fields on the dynamics and gravitational wave emission of Papaloizou-Pringle instability-saturated self-gravitating accretion disks: Simulations in full GR"
+        ],
+        "year": "2023"
+      },
+      {
+        "bibcode": "2023MNRAS.520..392B",
+        "author": [
+          "Bright, Jane C.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "MNRAS",
+          "MNRAS.520"
+        ],
+        "doi": [
+          "10.1093/mnras/stad091",
+          "10.48550/arXiv.2210.15686"
+        ],
+        "title": [
+          "Minidisc influence on flow variability in accreting spinning black hole binaries: simulations in full general relativity"
+        ],
+        "year": "2023"
+      },
+      {
+        "bibcode": "2022PhRvD.106h4017L",
+        "author": [
+          "Luna, Raimon",
+          "Bozzola, Gabriele",
+          "Cardoso, Vitor",
+          "Paschalidis, Vasileios",
+          "Zilh\u00e3o, Miguel"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.106"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.106.084017",
+          "10.48550/arXiv.2207.06429"
+        ],
+        "title": [
+          "Kicks in charged black hole binaries"
+        ],
+        "year": "2022"
+      },
+      {
+        "bibcode": "2022PhRvD.106b3015R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.106"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.106.023015",
+          "10.48550/arXiv.2204.00698"
+        ],
+        "title": [
+          "Improving the convergence order of binary neutron star merger simulations in the Baumgarte- Shapiro-Shibata-Nakamura formulation"
+        ],
+        "year": "2022"
+      },
+      {
+        "bibcode": "2022PhRvX..12a1058A",
+        "author": [
+          "Annala, Eemeli",
+          "Gorda, Tyler",
+          "Katerini, Evangelia",
+          "Kurkela, Aleksi",
+          "N\u00e4ttil\u00e4, Joonas",
+          "Paschalidis, Vasileios",
+          "Vuorinen, Aleksi"
+        ],
+        "bibstem": [
+          "PhRvX",
+          "PhRvX..12"
+        ],
+        "doi": [
+          "10.1103/PhysRevX.12.011058",
+          "10.48550/arXiv.2105.05132"
+        ],
+        "title": [
+          "Multimessenger Constraints for Ultradense Matter"
+        ],
+        "year": "2022"
+      },
+      {
+        "bibcode": "2021PhRvD.104f3016R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios",
+          "\u00d6zel, Feryal"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.104"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.104.063016",
+          "10.48550/arXiv.2104.07226"
+        ],
+        "title": [
+          "Realistic finite-temperature effects in neutron star merger simulations"
+        ],
+        "year": "2021"
+      },
+      {
+        "bibcode": "2021ApJ...912..128P",
+        "author": [
+          "Paterson, K.",
+          "Lundquist, M. J.",
+          "Rastinejad, J. C.",
+          "Fong, W.",
+          "Sand, D. J.",
+          "Andrews, J. E.",
+          "Amaro, R. C.",
+          "Eskandari, O.",
+          "Wyatt, S.",
+          "Daly, P. N.",
+          "Bradley, H.",
+          "Zhou-Wright, S.",
+          "Valenti, S.",
+          "Yang, S.",
+          "Christensen, E.",
+          "Gibbs, A. R.",
+          "Shelly, F.",
+          "Bilinski, C.",
+          "Chomiuk, L.",
+          "Corsi, A.",
+          "Drout, M. R.",
+          "Foley, R. J.",
+          "Gabor, P.",
+          "Garnavich, P.",
+          "Grier, C. J.",
+          "Hamden, E.",
+          "Krantz, H.",
+          "Olszewski, E.",
+          "Paschalidis, V.",
+          "Reichart, D.",
+          "Rest, A.",
+          "Smith, N.",
+          "Strader, J.",
+          "Trilling, D.",
+          "Veillet, C.",
+          "Wagner, R. M.",
+          "Weiner, B.",
+          "Zabludoff, A."
+        ],
+        "bibstem": [
+          "ApJ",
+          "ApJ...912"
+        ],
+        "doi": [
+          "10.3847/1538-4357/abeb71",
+          "10.48550/arXiv.2012.11700"
+        ],
+        "title": [
+          "Searches after Gravitational Waves Using ARizona Observatories (SAGUARO): Observations and Analysis from Advanced LIGO/Virgo's Third Observing Run"
+        ],
+        "year": "2021"
+      },
+      {
+        "bibcode": "2021ApJ...910L..26P",
+        "author": [
+          "Paschalidis, Vasileios",
+          "Bright, Jane",
+          "Ruiz, Milton",
+          "Gold, Roman"
+        ],
+        "bibstem": [
+          "ApJL",
+          "ApJL..910"
+        ],
+        "doi": [
+          "10.3847/2041-8213/abee21",
+          "10.48550/arXiv.2102.06712"
+        ],
+        "title": [
+          "Minidisk Dynamics in Accreting, Spinning Black Hole Binaries: Simulations in Full General Relativity"
+        ],
+        "year": "2021"
+      },
+      {
+        "bibcode": "2021PhRvD.103d3013W",
+        "author": [
+          "Wessel, Erik",
+          "Paschalidis, Vasileios",
+          "Tsokaros, Antonios",
+          "Ruiz, Milton",
+          "Shapiro, Stuart L."
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.103"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.103.043013",
+          "10.48550/arXiv.2011.04077"
+        ],
+        "title": [
+          "Gravitational waves from disks around spinning black holes: Simulations in full general relativity"
+        ],
+        "year": "2021"
+      },
+      {
+        "bibcode": "2021PhRvL.126d1103B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvL",
+          "PhRvL.126"
+        ],
+        "doi": [
+          "10.1103/PhysRevLett.126.041103",
+          "10.48550/arXiv.2006.15764"
+        ],
+        "title": [
+          "General Relativistic Simulations of the Quasicircular Inspiral and Merger of Charged Black Holes: GW150914 and Fundamental Physics Implications"
+        ],
+        "year": "2021"
+      },
+      {
+        "bibcode": "2020PhRvD.102l4077R",
+        "author": [
+          "Ruiz, Milton",
+          "Paschalidis, Vasileios",
+          "Tsokaros, Antonios",
+          "Shapiro, Stuart L."
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.102"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.102.124077",
+          "10.48550/arXiv.2011.08863"
+        ],
+        "title": [
+          "Black hole-neutron star coalescence: Effects of the neutron star spin on jet launching and dynamical ejecta mass"
+        ],
+        "year": "2020"
+      }
+    ]
+  }
+}
