@@ -5,7 +5,7 @@ const members = [
         role: "Professor",
         email: "vpaschal@gmail.com",
         bio: " Things",
-        photo: "img/members/vasilis.jpg", // path to image from index.html (where this would be rendered)
+        photo: "img/members/vasilis.jpg",
         photoAlt: "Vasileios Paschalidis",
         links: { website: "#", scholar: "#" }
     },
@@ -14,7 +14,7 @@ const members = [
         role: "PhD Candidate",
         email: "ekwessel@arizona.edu",
         bio: "Other things",
-        photo: "img/members/erik.jpg", // path to image from index.html (where this would be rendered)
+        photo: "img/members/erik.jpg",
         photoAlt: "Erik Wessel",
         links: { github: "#" }
     },
@@ -41,7 +41,7 @@ const members = [
         role: "PhD Candidate",
         email: "vik@arizona.edu",
         bio: "Binary Black Hole Accretion, Multimessenger Astronomy, Jet Emission",
-        photo: "img/members/vikram.jpg", // path to image from index.html (where this would be rendered)
+        photo: "img/members/vikram.jpg",
         photoAlt: "Vikram Manikantan",
         links: { Publications: "https://ui.adsabs.harvard.edu/search/q=author%3A%22Manikantan%2C%20Vikram%22", GitHub: "https://github.com/vikrammanikantan", "Personal Website": "https://www.vikrammanikantan.com" }
     },
@@ -63,24 +63,14 @@ const pastMembers = [
 /* ===== PROJECT DATA ===== */
 const projects = [
     {
-        area: "GRMHD",
-        title: "Accretion & Jets",
-        desc: "MAD/SANE states, jet power maps, spectra.",
-        highlights: ["3D GRMHD", "Spectra & polarization"],
-        more: "Exploring spin, tilt, and flux-threading dependence.",
-        link: "#",
-        image: "assets/img/projects/accretion-jets.jpg",
-        imageAlt: "Simulated accretion disk and jet"
-    },
-    {
-        area: "Numerical Relativity",
-        title: "Binary BH Spacetimes",
-        desc: "Matter-coupled evolutions and EM chirps.",
-        highlights: ["3+1 evolutions", "Disk cavity dynamics"],
-        more: "Predicting pre-merger light curves tied to GW phase.",
-        link: "#",
-        image: "", /* demonstrates gradient fallback */
-        imageAlt: "Visualization of binary black hole spacetime"
+        area: "GRMHD + Radiation Transport",
+        title: "Coincident Multimessenger Bursts from Eccentric Supermassive Black Holes",
+        desc: "blurb 1",
+        highlights: ["Variable Dual-jet Launching", "Multimessenger Science"],
+        more: "more information about this highlight",
+        link: "extras/coincident.html",
+        image: "assets/img/highlights/coincident.jpg",
+        imageAlt: "Coincident Multimessenger Bursts from Eccentric Supermassive Black Holes"
     },
 ];
 
