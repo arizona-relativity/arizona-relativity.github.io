@@ -42,7 +42,8 @@ PY
 )&fl=$FIELDS&sort=date%20desc&rows=40"
 
           curl -sS -H "Authorization: Bearer $ADS_API_TOKEN" "$URL" \
-            | jq -r '.response.docs' > data/publications.json
+  | jq '{response:{docs:.response.docs}}' > data/publications.json
+
 
       - name: Commit changes
         run: |
