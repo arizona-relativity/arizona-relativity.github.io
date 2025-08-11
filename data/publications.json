@@ -2,26 +2,6 @@
   "response": {
     "docs": [
       {
-        "bibcode": "2025ApJ...984L..47M",
-        "author": [
-          "Manikantan, Vikram",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
-        ],
-        "bibstem": [
-          "ApJL",
-          "ApJL..984"
-        ],
-        "doi": [
-          "10.3847/2041-8213/adccb8",
-          "10.48550/arXiv.2411.11955"
-        ],
-        "title": [
-          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
-        ],
-        "year": "2025"
-      },
-      {
         "bibcode": "2025PhRvD.111j4031S",
         "author": [
           "Smith, M. A. M.",
@@ -58,6 +38,26 @@
         ],
         "title": [
           "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025ApJ...984L..47M",
+        "author": [
+          "Manikantan, Vikram",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "ApJL",
+          "ApJL..984"
+        ],
+        "doi": [
+          "10.3847/2041-8213/adccb8",
+          "10.48550/arXiv.2411.11955"
+        ],
+        "title": [
+          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
         ],
         "year": "2025"
       },
@@ -206,7 +206,7 @@
           "Bozzola, Gabriele",
           "Cardoso, Vitor",
           "Paschalidis, Vasileios",
-          "Zilh\u00e3o, Miguel"
+          "Zilhão, Miguel"
         ],
         "bibstem": [
           "PhRvD",
@@ -247,7 +247,7 @@
           "Gorda, Tyler",
           "Katerini, Evangelia",
           "Kurkela, Aleksi",
-          "N\u00e4ttil\u00e4, Joonas",
+          "Nättilä, Joonas",
           "Paschalidis, Vasileios",
           "Vuorinen, Aleksi"
         ],
@@ -269,7 +269,7 @@
         "author": [
           "Raithel, Carolyn A.",
           "Paschalidis, Vasileios",
-          "\u00d6zel, Feryal"
+          "Özel, Feryal"
         ],
         "bibstem": [
           "PhRvD",
