@@ -23,7 +23,7 @@ const members = [
         role: "PhD Candidate",
         email: "mamsmith@arizona.edu",
         bio: "also other things",
-        photo: "img/members/m.jpg", // path to image from index.html (where this would be rendered)
+        photo: "img/members/m.jpg",
         photoAlt: "M Smith",
         links: { linkedin: "#" }
     },
@@ -54,7 +54,7 @@ const pastMembers = [
         role: "doing something @ somewhere",
         email: "",
         bio: "",
-        photo: "img/members/person1.jpg", // path to image from index.html (where this would be rendered)
+        photo: "img/members/person1.jpg",
         photoAlt: "Person 1",
         links: { website: "#" }
     }

@@ -2,10 +2,10 @@ name: Fetch ADS publications
 on:
   workflow_dispatch: {}
   schedule:
-    - cron: "0 9 * * 1"  # every Monday 09:00 UTC; adjust as you like
+    - cron: "0 9 * * 1"  # every Monday 09:00 UTC
 
 permissions:
-  contents: write    # allow committing back to the repo
+  contents: write
 
 jobs:
   build:
@@ -22,27 +22,30 @@ jobs:
           ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}
         run: |
           mkdir -p data
+
           # ---- Configure your query here ----
           # Option A: by ORCID(s) (recommended)
           ORCIDS=("0000-0002-8099-9023")
-          OR_QUERY=$(printf 'orcid:%s OR ' "${ORCIDS[@]}"); OR_QUERY="${OR_QUERY% OR }"
+          OR_QUERY=$(printf 'orcid:%s OR ' "${ORCIDS[@]}")
+          OR_QUERY="${OR_QUERY% OR }"
 
-          # Option B (instead): by author name; comment ORCIDS above and uncomment below
+          # Option B: by author name (comment ORCIDS above and uncomment below)
           # AUTHOR='Paschalidis, Vasileios'
           # QUERY="author:\"$AUTHOR\""
 
-          # Build final query (use ORCIDS by default)
+          # Build final query (use ORCIDS by default). Add filters if you like:
+          # e.g., AND property:refereed AND year:2019-3000
           QUERY="(${OR_QUERY})"
 
-FIELDS="bibcode,author,title,year,bibstem,doi,arxiv_eprint"
+          FIELDS="bibcode,author,title,year,bibstem,doi,arxiv_eprint"
 
-ENCODED_QUERY=$(jq -rn --arg q "$QUERY" '$q|@uri')
-URL="https://api.adsabs.harvard.edu/v1/search/query?q=$ENCODED_QUERY&fl=$FIELDS&sort=date%20desc&rows=40"
+          # URL-encode QUERY safely with jq
+          ENCODED_QUERY=$(jq -rn --arg q "$QUERY" '$q|@uri')
+          URL="https://api.adsabs.harvard.edu/v1/search/query?q=$ENCODED_QUERY&fl=$FIELDS&sort=date%20desc&rows=40"
 
-curl -sS -H "Authorization: Bearer $ADS_API_TOKEN" "$URL" \
-  | jq '{response:{docs:.response.docs}}' > data/publications.json
-
-
+          # Fetch and wrap to match your site's expected shape { response: { docs: [...] } }
+          curl -sS -H "Authorization: Bearer $ADS_API_TOKEN" "$URL" \
+            | jq '{response:{docs:.response.docs}}' > data/publications.json
 
       - name: Commit changes
         run: |
