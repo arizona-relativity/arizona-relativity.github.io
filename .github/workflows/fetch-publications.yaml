@@ -1,0 +1,57 @@
+name: Fetch ADS publications
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 9 * * 1"  # every Monday 09:00 UTC; adjust as you like
+
+permissions:
+  contents: write    # allow committing back to the repo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Ensure jq is available
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Fetch from ADS
+        env:
+          ADS_API_TOKEN: ${{ secrets.ADS_API_TOKEN }}
+        run: |
+          mkdir -p data
+          # ---- Configure your query here ----
+          # Option A: by ORCID(s) (recommended)
+          ORCIDS=("0000-0002-8099-9023")
+          OR_QUERY=$(printf 'orcid:%s OR ' "${ORCIDS[@]}"); OR_QUERY="${OR_QUERY% OR }"
+
+          # Option B (instead): by author name; comment ORCIDS above and uncomment below
+          # AUTHOR='Paschalidis, Vasileios'
+          # QUERY="author:\"$AUTHOR\""
+
+          # Build final query (use ORCIDS by default)
+          QUERY="(${OR_QUERY})"
+
+          FIELDS="bibcode,author,title,year,bibstem,doi,arxiv_eprint"
+          URL="https://api.adsabs.harvard.edu/v1/search/query?q=$(python3 - <<PY
+import urllib.parse, os
+print(urllib.parse.quote(os.environ['QUERY']))
+PY
+)&fl=$FIELDS&sort=date%20desc&rows=40"
+
+          curl -sS -H "Authorization: Bearer $ADS_API_TOKEN" "$URL" \
+            | jq -r '.response.docs' > data/publications.json
+
+      - name: Commit changes
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/publications.json
+            git commit -m "Update publications.json from ADS"
+            git push
+          else
+            echo "No changes to commit."
+          fi
