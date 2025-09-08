@@ -22,6 +22,26 @@
         "year": "2025"
       },
       {
+        "bibcode": "2025PhRvD.111j4031S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104031",
+          "10.48550/arXiv.2411.11960"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
+        ],
+        "year": "2025"
+      },
+      {
         "bibcode": "2025PhRvD.111j4032S",
         "author": [
           "Smith, M. A. M.",
@@ -62,24 +82,24 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025PhRvD.111j4031S",
+        "bibcode": "2024PhRvD.110d4037N",
         "author": [
-          "Smith, M. A. M.",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
+          "Naseri, Mahdi",
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
         ],
         "bibstem": [
           "PhRvD",
-          "PhRvD.111"
+          "PhRvD.110"
         ],
         "doi": [
-          "10.1103/PhysRevD.111.104031",
-          "10.48550/arXiv.2411.11960"
+          "10.1103/PhysRevD.110.044037",
+          "10.48550/arXiv.2406.15544"
         ],
         "title": [
-          "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
+          "Exploring pathways to forming twin stars"
         ],
-        "year": "2025"
+        "year": "2024"
       },
       {
         "bibcode": "2024PhRvD.110d3002R",
@@ -97,26 +117,6 @@
         ],
         "title": [
           "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
-        ],
-        "year": "2024"
-      },
-      {
-        "bibcode": "2024PhRvD.110d4037N",
-        "author": [
-          "Naseri, Mahdi",
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.044037",
-          "10.48550/arXiv.2406.15544"
-        ],
-        "title": [
-          "Exploring pathways to forming twin stars"
         ],
         "year": "2024"
       },
