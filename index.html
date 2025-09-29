@@ -1,182 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Arizona Relativity</title>
-    <link rel="icon" type="image/png" href="img/logo_circle_gradient.png">
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arizona Relativity — Coming Soon</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>@import url("https://use.typekit.net/qke6kvg.css");</style>
 
-    <!-- Tailwind (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/data.js"></script>
-    <script src="js/pubs.js"></script>
-    <script src="js/render.js"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/router.js"></script>
+<style>
+  :root { --ua-red:#AB0520; }
+  body { font-family: "proxima-nova", sans-serif; }
 
-    <!-- Link style sheet -->
-    <link rel="stylesheet" href="css/site.css">
+  /* Starfield background */
+  body::before{
+    content:""; position:fixed; inset:0; z-index:-3;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(171,5,32,0.35), transparent 25%),
+      radial-gradient(circle at 80% 30%, rgba(171,5,32,0.25), transparent 35%),
+      radial-gradient(circle at 40% 80%, rgba(171,5,32,0.25), transparent 25%);
+  }
+  body::after{
+    content:""; position:fixed; inset:0; z-index:-2; opacity:0.6;
+    background-image:
+      radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,.8) 50%, transparent 51%),
+      radial-gradient(1px 1px at 30% 40%, rgba(255,255,255,.6) 50%, transparent 51%),
+      radial-gradient(1px 1px at 70% 30%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1px 1px at 50% 80%, rgba(255,255,255,.7) 50%, transparent 51%),
+      radial-gradient(1px 1px at 85% 60%, rgba(255,255,255,.8) 50%, transparent 51%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black, transparent 85%);
+            mask-image: radial-gradient(ellipse at center, black, transparent 85%);
+  }
+
+  .glow {
+    position: absolute; inset: 0; z-index: -1;
+    background: radial-gradient(circle at center, rgba(171,5,32,0.45) 0%, transparent 60%);
+    filter: blur(70px);
+  }
+
+  .quick-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 0.5rem;
+    color: #d1d5db;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  .quick-link:hover {
+    background-color: rgba(171,5,32,0.25);
+    border-color: var(--ua-red);
+    color: white;
+  }
+</style>
 </head>
 
-<body class="bg-black text-gray-200 min-h-screen flex flex-col">
+<body class="bg-black text-white min-h-screen flex flex-col justify-between relative overflow-hidden">
+  <div class="glow"></div>
 
-    <!-- Header -->
-    <header class="sticky top-0 z-40 border-b border-white/10 backdrop-blur bg-black/55">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-          <!-- Logo -->
-          <a href="#home" id="logoLink" class="flex items-center gap-3 text-white">
-            <div class="h-7 w-7 rounded-full shadow"
-                 style="background: radial-gradient(60% 60% at 40% 40%, var(--ua-blue), transparent 70%), conic-gradient(from 120deg at 50% 50%, var(--ua-red), var(--ua-blue));"></div>
-            <span class="font-bold tracking-wide">Arizona Gravity and MMA</span>
-          </a>
-      
-          <!-- Desktop nav -->
-          <nav class="hidden md:flex gap-1 text-sm">
-            <button type="button" class="px-3 py-2 rounded-md hover:bg-white/10" data-nav="home">Home</button>
-            <button type="button" class="px-3 py-2 rounded-md hover:bg-white/10" data-nav="science">Science</button>
-            <button type="button" class="px-3 py-2 rounded-md hover:bg-white/10" data-nav="members">Members</button>
-            <a href="extras/compass.html" class="px-3 py-2 rounded-md hover:bg-white/10 no-underline">COMPASS &#8599;</a>
-          </nav>
-      
-          <!-- Mobile: hamburger -->
-          <button id="navToggle"
-                  class="md:hidden inline-flex items-center justify-center p-2 rounded-md hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/20"
-                  aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-            <!-- icon -->
-            <svg class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
-        </div>
-      
-        <!-- Mobile menu panel -->
-        <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-black/0 backdrop-blur">
-          <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-1 text-sm">
-            <button type="button" class="w-full text-left px-3 py-2 rounded-md hover:bg-white/10" data-nav="home">Home</button>
-            <button type="button" class="w-full text-left px-3 py-2 rounded-md hover:bg-white/10" data-nav="science">Science</button>
-            <button type="button" class="w-full text-left px-3 py-2 rounded-md hover:bg-white/10" data-nav="members">Members</button>
-            <a href="extras/compass.html" class="w-full px-3 py-2 rounded-md hover:bg-white/10 no-underline">COMPASS &#8599;</a>
-          </div>
-        </div>
+  <main class="flex-grow flex flex-col items-center justify-center space-y-4 relative z-10">
+    <h1 class="text-5xl md:text-7xl tracking-wide" style="color: var(--ua-red); font-weight: 300;">
+      Arizona Relativity
+    </h1>
+    <p class="text-xl md:text-2xl italic" style="color: #d1d5db; font-weight: 100;">
+      Website coming soon...
+    </p>
+  </main>
 
-    </header>
-      
+  <footer class="w-full py-6 flex justify-center space-x-4 relative z-10">
+    <a href="https://astro.arizona.edu/" target="_blank" rel="noopener" class="quick-link">Steward Observatory</a>
+    <a href="https://astro.arizona.edu/research-groups/theoretical-astrophysics-program" target="_blank" rel="noopener" class="quick-link">Theoretical Astrophysics Program</a>
+    <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Vasileios%20Paschalidis%22&sort=date%20desc" target="_blank" rel="noopener" class="quick-link">Publications</a>
 
-    <!-- Main -->
-    <main class="flex-1">
-
-        <!-- HOME -->
-        <section id="home" class="page">
-            <!-- Hero -->
-            <div class="relative min-h-[40vh] flex items-center">
-                <div class="relative z-10 max-w-6xl mx-auto px-4 py-16">
-                    <h1 class="text-6xl font-light tracking-wide" style="color: var(--ua-red);">
-                        Dynamical Gravity and Multimessenger Astrophysics @ Arizona
-                    </h1>
-                    <p class="mt-4 max-w-3xl font-light text-lg italic text-gray-200">
-                        Gravity • Relativistic Plasmas • Radiation
-                    </p>
-                    <div class="mt-6 flex gap-3">
-                        <button type="button" class="btn-primary rounded-xl px-4 py-2" data-nav="science">Our
-                            Science
-                        </button>
-                        <button type="button" class="btn-secondary rounded-xl px-4 py-2" data-nav="members">Meet the
-                            Team
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pillars -->
-            <div class="relative z-10 max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4 -mt-4" id="pillarsGrid"></div>
-
-            <!-- Highlights -->
-            <section class="relative z-10 max-w-6xl mx-auto px-4 mt-14 pb-24">
-                <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6">Recent Highlights</h2>
-                <div id="highlights" class="grid md:grid-cols-3 gap-6"></div>
-            </section>
-        </section>
-
-        <!-- MEMBERS -->
-        <section id="members" class="page hidden max-w-6xl mx-auto px-4 py-14">
-            <div class="mb-6">
-                <h2 class="text-2xl md:text-3xl font-semibold text-white">Current Members</h2>
-            </div>
-            <div id="membersGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start"></div>
-
-            <div class="mb-6 mt-12">
-                <h2 class="text-2xl md:text-3xl font-semibold text-white">Past Members</h2>
-            </div>
-            <div id="pastMembersGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start"></div>
-        </section>
-
-        <!-- SCIENCE -->
-        <section id="science" class="page hidden max-w-6xl mx-auto px-4 py-14">
-            <div class="mb-6">
-                <h2 class="text-2xl md:text-3xl font-semibold text-white">Science</h2>
-            </div>
-            <div id="projectsGrid" class="grid md:grid-cols-2 gap-6"></div>
-
-            <div class="mt-10">
-                <h3 class="font-semibold text-white">Latest Publications <a href="https://ui.adsabs.harvard.edu/search/q=orcid:0000-0002-8099-9023&sort=date%20desc" style="text-decoration: none; color: var(--ua-red);">[ADS]</a></h3>
-                <ul id="pubList" class="mt-3 space-y-2 text-sm text-gray-300"></ul>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-white/10">
-        <div class="max-w-6xl mx-auto px-4 py-8 text-sm flex flex-wrap gap-3 items-center justify-between">
-            <div class="text-gray-400">© <span id="year"></span> Arizona Relativity Group • Steward Observatory</div>
-            <div class="flex gap-2">
-                <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" target="_blank"
-                    rel="noopener" href="https://astro.arizona.edu/">Steward Observatory</a>
-                <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" target="_blank"
-                    rel="noopener"
-                    href="https://astro.arizona.edu/research-groups/theoretical-astrophysics-program">Theoretical
-                    Astrophysics Program</a>
-                <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" target="_blank"
-                    rel="noopener"
-                    href="https://ui.adsabs.harvard.edu/search/q=orcid:0000-0002-8099-9023&sort=date%20desc">ADS
-                    Publications</a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modal -->
-    <div id="modal" class="fixed inset-0 hidden z-50 items-center justify-center p-4 modal-backdrop">
-        <div id="modalPanel"
-            class="relative max-w-2xl w-full rounded-2xl border border-white/15 bg-neutral-900 p-6 shadow-2xl"
-            role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-            <button id="modalCloseBtn"
-                class="absolute top-3 right-3 rounded-md px-2 py-1 text-sm border border-white/20 hover:bg-white/10">Close</button>
-
-            <!-- Edge-to-edge header image for projects/pillars/highlights -->
-            <div id="modalHeaderWrap" class="hidden -mx-6 -mt-6 mb-4">
-                <div id="modalHeaderPh" class="w-full h-48 md:h-56 header-placeholder rounded-t-2xl"></div>
-                <img id="modalHeaderImg" class="block w-full h-48 md:h-56 object-cover rounded-t-2xl hidden"
-                    loading="lazy" />
-            </div>
-
-            <!-- Avatar + text (avatar hidden for non-members; text always visible) -->
-            <div id="modalMemberRow" class="flex items-start gap-4">
-                <div id="modalAvatar"
-                    class="h-28 w-28 rounded-full border border-white/10 overflow-hidden flex-shrink-0">
-                    <img id="modalPhoto" alt="" class="w-full h-full object-cover hidden" loading="lazy" />
-                    <div id="modalPlaceholder" class="w-full h-full gradient-placeholder"></div>
-                </div>
-
-                <div class="flex-1">
-                    <h3 id="modalTitle" class="text-xl font-semibold text-white"></h3>
-                    <p id="modalSubtitle" class="text-sm text-gray-300 mt-1"></p>
-                    <div id="modalBody" class="mt-4 text-gray-200 text-sm leading-6"></div>
-                    <div id="modalLinks" class="mt-4 flex flex-wrap gap-3 text-sm"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+  </footer>
 </body>
-
 </html>
