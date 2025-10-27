@@ -22,6 +22,26 @@
         "year": "2025"
       },
       {
+        "bibcode": "2025ApJ...984L..47M",
+        "author": [
+          "Manikantan, Vikram",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "ApJL",
+          "ApJL..984"
+        ],
+        "doi": [
+          "10.3847/2041-8213/adccb8",
+          "10.48550/arXiv.2411.11955"
+        ],
+        "title": [
+          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
+        ],
+        "year": "2025"
+      },
+      {
         "bibcode": "2025PhRvD.111j4031S",
         "author": [
           "Smith, M. A. M.",
@@ -62,24 +82,23 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025ApJ...984L..47M",
+        "bibcode": "2024PhRvD.110d3002R",
         "author": [
-          "Manikantan, Vikram",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
         ],
         "bibstem": [
-          "ApJL",
-          "ApJL..984"
+          "PhRvD",
+          "PhRvD.110"
         ],
         "doi": [
-          "10.3847/2041-8213/adccb8",
-          "10.48550/arXiv.2411.11955"
+          "10.1103/PhysRevD.110.043002",
+          "10.48550/arXiv.2312.14046"
         ],
         "title": [
-          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
+          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
         ],
-        "year": "2025"
+        "year": "2024"
       },
       {
         "bibcode": "2024PhRvD.110d4037N",
@@ -98,25 +117,6 @@
         ],
         "title": [
           "Exploring pathways to forming twin stars"
-        ],
-        "year": "2024"
-      },
-      {
-        "bibcode": "2024PhRvD.110d3002R",
-        "author": [
-          "Raithel, Carolyn A.",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.043002",
-          "10.48550/arXiv.2312.14046"
-        ],
-        "title": [
-          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
         ],
         "year": "2024"
       },
