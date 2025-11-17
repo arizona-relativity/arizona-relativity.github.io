@@ -12,7 +12,8 @@
           "ApJ...993"
         ],
         "doi": [
-          "10.3847/1538-4357/ae0b5b"
+          "10.3847/1538-4357/ae0b5b",
+          "10.48550/arXiv.2508.15150"
         ],
         "title": [
           "A Pseudo-Newtonian Stationary Circumbinary Slim Disk Model"
@@ -36,26 +37,6 @@
         ],
         "title": [
           "Effects of eccentricity on accreting binary black holes: MHD simulations in full GR reveal novel periodicities in jet power and synchrotron spectra"
-        ],
-        "year": "2025"
-      },
-      {
-        "bibcode": "2025ApJ...984L..47M",
-        "author": [
-          "Manikantan, Vikram",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
-        ],
-        "bibstem": [
-          "ApJL",
-          "ApJL..984"
-        ],
-        "doi": [
-          "10.3847/2041-8213/adccb8",
-          "10.48550/arXiv.2411.11955"
-        ],
-        "title": [
-          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
         ],
         "year": "2025"
       },
@@ -100,24 +81,24 @@
         "year": "2025"
       },
       {
-        "bibcode": "2024PhRvD.110d4037N",
+        "bibcode": "2025ApJ...984L..47M",
         "author": [
-          "Naseri, Mahdi",
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
+          "Manikantan, Vikram",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
         ],
         "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
+          "ApJL",
+          "ApJL..984"
         ],
         "doi": [
-          "10.1103/PhysRevD.110.044037",
-          "10.48550/arXiv.2406.15544"
+          "10.3847/2041-8213/adccb8",
+          "10.48550/arXiv.2411.11955"
         ],
         "title": [
-          "Exploring pathways to forming twin stars"
+          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
         ],
-        "year": "2024"
+        "year": "2025"
       },
       {
         "bibcode": "2024PhRvD.110d3002R",
@@ -135,6 +116,26 @@
         ],
         "title": [
           "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
+        ],
+        "year": "2024"
+      },
+      {
+        "bibcode": "2024PhRvD.110d4037N",
+        "author": [
+          "Naseri, Mahdi",
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.044037",
+          "10.48550/arXiv.2406.15544"
+        ],
+        "title": [
+          "Exploring pathways to forming twin stars"
         ],
         "year": "2024"
       },
@@ -158,6 +159,25 @@
         "year": "2023"
       },
       {
+        "bibcode": "2023PhRvD.108f4010B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.064010",
+          "10.48550/arXiv.2309.04368"
+        ],
+        "title": [
+          "Can quasicircular mergers of charged black holes produce extremal black holes?"
+        ],
+        "year": "2023"
+      },
+      {
         "bibcode": "2023PhRvD.108f3018C",
         "author": [
           "Cai, Yangyang",
@@ -174,25 +194,6 @@
         ],
         "title": [
           "Dynamics of ultrarelativistic charged particles with strong radiation reaction. I. Aristotelian equilibrium state"
-        ],
-        "year": "2023"
-      },
-      {
-        "bibcode": "2023PhRvD.108f4010B",
-        "author": [
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.108"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.108.064010",
-          "10.48550/arXiv.2309.04368"
-        ],
-        "title": [
-          "Can quasicircular mergers of charged black holes produce extremal black holes?"
         ],
         "year": "2023"
       },
