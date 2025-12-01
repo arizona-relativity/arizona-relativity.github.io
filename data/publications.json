@@ -2,6 +2,79 @@
   "response": {
     "docs": [
       {
+        "bibcode": "2025ApJ...994L..45F",
+        "author": [
+          "Franz, Noah",
+          "Subrayan, Bhagya",
+          "Kilpatrick, Charles D.",
+          "Hosseinzadeh, Griffin",
+          "Sand, David J.",
+          "Alexander, Kate D.",
+          "Fong, Wen-fai",
+          "Christy, Collin T.",
+          "Pearson, Jeniveve",
+          "Laskar, Tanmoy",
+          "Hsu, Brian",
+          "Rastinejad, Jillian",
+          "Lundquist, Michael J.",
+          "Berger, Edo",
+          "Bostroem, K. Azalee",
+          "Bom, Clecio R.",
+          "Darc, Phelipe",
+          "Gurwell, Mark",
+          "Hostler Schimpf, Shelbi",
+          "Keating, Garrett K.",
+          "Noel, Phillip",
+          "Ransome, Conor",
+          "Rao, Ramprasad",
+          "Santana-Silva, Luidhy",
+          "Souza Santos, A.",
+          "Shrestha, Manisha",
+          "Anche, Ramya",
+          "Andrews, Jennifer E.",
+          "Borthakur, Sanchayeeta",
+          "Butler, Nathaniel R.",
+          "Coppejans, Deanne L.",
+          "Daly, Philip N.",
+          "Daniel, Kathryne J.",
+          "Duffell, Paul C.",
+          "Eftekhari, Tarraneh",
+          "Fields, Carl E.",
+          "Gagliano, Alexander T.",
+          "Golay, Walter W.",
+          "Grichener, Aldana",
+          "Hamden, Erika T.",
+          "Hiramatsu, Daichi",
+          "Kumar, Harsh",
+          "Manikantan, Vikram",
+          "Margutti, Raffaella",
+          "Paschalidis, Vasileios",
+          "Paterson, Kerry",
+          "Reichart, Daniel E.",
+          "Renzo, Mathieu",
+          "Salmas, Kali",
+          "Schroeder, Genevieve",
+          "Smith, Nathan",
+          "Spekkens, Kristine",
+          "Strader, Jay",
+          "Trilling, David E.",
+          "Vieira, Nicholas",
+          "Weiner, Benjamin",
+          "Williams, Peter K. G."
+        ],
+        "bibstem": [
+          "ApJL",
+          "ApJL..994"
+        ],
+        "doi": [
+          "10.3847/2041-8213/ae17a8"
+        ],
+        "title": [
+          "Optimizing Kilonova Searches: A Case Study of the Type IIb SN 2025ulz in the Localization Volume of the Low-significance Gravitational Wave Event S250818k"
+        ],
+        "year": "2025"
+      },
+      {
         "bibcode": "2025ApJ...993..176W",
         "author": [
           "Wen, Sixiang",
@@ -101,25 +174,6 @@
         "year": "2025"
       },
       {
-        "bibcode": "2024PhRvD.110d3002R",
-        "author": [
-          "Raithel, Carolyn A.",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.043002",
-          "10.48550/arXiv.2312.14046"
-        ],
-        "title": [
-          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
-        ],
-        "year": "2024"
-      },
-      {
         "bibcode": "2024PhRvD.110d4037N",
         "author": [
           "Naseri, Mahdi",
@@ -136,6 +190,25 @@
         ],
         "title": [
           "Exploring pathways to forming twin stars"
+        ],
+        "year": "2024"
+      },
+      {
+        "bibcode": "2024PhRvD.110d3002R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.043002",
+          "10.48550/arXiv.2312.14046"
+        ],
+        "title": [
+          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
         ],
         "year": "2024"
       },
@@ -159,6 +232,25 @@
         "year": "2023"
       },
       {
+        "bibcode": "2023PhRvD.108f4010B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.064010",
+          "10.48550/arXiv.2309.04368"
+        ],
+        "title": [
+          "Can quasicircular mergers of charged black holes produce extremal black holes?"
+        ],
+        "year": "2023"
+      },
+      {
         "bibcode": "2023PhRvD.108f3018C",
         "author": [
           "Cai, Yangyang",
@@ -175,25 +267,6 @@
         ],
         "title": [
           "Dynamics of ultrarelativistic charged particles with strong radiation reaction. I. Aristotelian equilibrium state"
-        ],
-        "year": "2023"
-      },
-      {
-        "bibcode": "2023PhRvD.108f4010B",
-        "author": [
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.108"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.108.064010",
-          "10.48550/arXiv.2309.04368"
-        ],
-        "title": [
-          "Can quasicircular mergers of charged black holes produce extremal black holes?"
         ],
         "year": "2023"
       },
