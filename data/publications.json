@@ -67,7 +67,8 @@
           "ApJL..994"
         ],
         "doi": [
-          "10.3847/2041-8213/ae17a8"
+          "10.3847/2041-8213/ae17a8",
+          "10.48550/arXiv.2510.17104"
         ],
         "title": [
           "Optimizing Kilonova Searches: A Case Study of the Type IIb SN 2025ulz in the Localization Volume of the Low-significance Gravitational Wave Event S250818k"
@@ -232,25 +233,6 @@
         "year": "2023"
       },
       {
-        "bibcode": "2023PhRvD.108f4010B",
-        "author": [
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.108"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.108.064010",
-          "10.48550/arXiv.2309.04368"
-        ],
-        "title": [
-          "Can quasicircular mergers of charged black holes produce extremal black holes?"
-        ],
-        "year": "2023"
-      },
-      {
         "bibcode": "2023PhRvD.108f3018C",
         "author": [
           "Cai, Yangyang",
@@ -267,6 +249,25 @@
         ],
         "title": [
           "Dynamics of ultrarelativistic charged particles with strong radiation reaction. I. Aristotelian equilibrium state"
+        ],
+        "year": "2023"
+      },
+      {
+        "bibcode": "2023PhRvD.108f4010B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.064010",
+          "10.48550/arXiv.2309.04368"
+        ],
+        "title": [
+          "Can quasicircular mergers of charged black holes produce extremal black holes?"
         ],
         "year": "2023"
       },
