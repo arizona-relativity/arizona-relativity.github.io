@@ -95,6 +95,25 @@
         "year": "2025"
       },
       {
+        "bibcode": "2025PhRvD.112j3050M",
+        "author": [
+          "Manikantan, Vikram",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.112"
+        ],
+        "doi": [
+          "10.1103/g98b-m8m1",
+          "10.48550/arXiv.2509.18254"
+        ],
+        "title": [
+          "Magnetically arrested minidisks around nonspinning binary black holes: The MAD scenario for circumbinary disk accretion"
+        ],
+        "year": "2025"
+      },
+      {
         "bibcode": "2025PhRvD.112d3004M",
         "author": [
           "Manikantan, Vikram",
@@ -233,6 +252,25 @@
         "year": "2023"
       },
       {
+        "bibcode": "2023PhRvD.108f4010B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.064010",
+          "10.48550/arXiv.2309.04368"
+        ],
+        "title": [
+          "Can quasicircular mergers of charged black holes produce extremal black holes?"
+        ],
+        "year": "2023"
+      },
+      {
         "bibcode": "2023PhRvD.108f3018C",
         "author": [
           "Cai, Yangyang",
@@ -249,25 +287,6 @@
         ],
         "title": [
           "Dynamics of ultrarelativistic charged particles with strong radiation reaction. I. Aristotelian equilibrium state"
-        ],
-        "year": "2023"
-      },
-      {
-        "bibcode": "2023PhRvD.108f4010B",
-        "author": [
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.108"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.108.064010",
-          "10.48550/arXiv.2309.04368"
-        ],
-        "title": [
-          "Can quasicircular mergers of charged black holes produce extremal black holes?"
         ],
         "year": "2023"
       },
