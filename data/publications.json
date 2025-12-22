@@ -22,13 +22,13 @@
           "Bom, Clecio R.",
           "Darc, Phelipe",
           "Gurwell, Mark",
-          "Hostler Schimpf, Shelbi",
+          "Schimpf, Shelbi Hostler",
           "Keating, Garrett K.",
           "Noel, Phillip",
           "Ransome, Conor",
           "Rao, Ramprasad",
           "Santana-Silva, Luidhy",
-          "Souza Santos, A.",
+          "Santos, A. Souza",
           "Shrestha, Manisha",
           "Anche, Ramya",
           "Andrews, Jennifer E.",
@@ -134,22 +134,22 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025ApJ...984L..47M",
+        "bibcode": "2025PhRvD.111j4032S",
         "author": [
-          "Manikantan, Vikram",
+          "Smith, M. A. M.",
           "Paschalidis, Vasileios",
           "Bozzola, Gabriele"
         ],
         "bibstem": [
-          "ApJL",
-          "ApJL..984"
+          "PhRvD",
+          "PhRvD.111"
         ],
         "doi": [
-          "10.3847/2041-8213/adccb8",
-          "10.48550/arXiv.2411.11955"
+          "10.1103/PhysRevD.111.104032",
+          "10.48550/arXiv.2412.01881"
         ],
         "title": [
-          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
+          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
         ],
         "year": "2025"
       },
@@ -174,24 +174,43 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025PhRvD.111j4032S",
+        "bibcode": "2025ApJ...984L..47M",
         "author": [
-          "Smith, M. A. M.",
+          "Manikantan, Vikram",
           "Paschalidis, Vasileios",
           "Bozzola, Gabriele"
         ],
         "bibstem": [
-          "PhRvD",
-          "PhRvD.111"
+          "ApJL",
+          "ApJL..984"
         ],
         "doi": [
-          "10.1103/PhysRevD.111.104032",
-          "10.48550/arXiv.2412.01881"
+          "10.3847/2041-8213/adccb8",
+          "10.48550/arXiv.2411.11955"
         ],
         "title": [
-          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
+          "Coincident Multimessenger Bursts from Eccentric Supermassive Binary Black Holes"
         ],
         "year": "2025"
+      },
+      {
+        "bibcode": "2024PhRvD.110d3002R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.043002",
+          "10.48550/arXiv.2312.14046"
+        ],
+        "title": [
+          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
+        ],
+        "year": "2024"
       },
       {
         "bibcode": "2024PhRvD.110d4037N",
@@ -210,25 +229,6 @@
         ],
         "title": [
           "Exploring pathways to forming twin stars"
-        ],
-        "year": "2024"
-      },
-      {
-        "bibcode": "2024PhRvD.110d3002R",
-        "author": [
-          "Raithel, Carolyn A.",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.043002",
-          "10.48550/arXiv.2312.14046"
-        ],
-        "title": [
-          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
         ],
         "year": "2024"
       },
@@ -252,25 +252,6 @@
         "year": "2023"
       },
       {
-        "bibcode": "2023PhRvD.108f4010B",
-        "author": [
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.108"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.108.064010",
-          "10.48550/arXiv.2309.04368"
-        ],
-        "title": [
-          "Can quasicircular mergers of charged black holes produce extremal black holes?"
-        ],
-        "year": "2023"
-      },
-      {
         "bibcode": "2023PhRvD.108f3018C",
         "author": [
           "Cai, Yangyang",
@@ -287,6 +268,25 @@
         ],
         "title": [
           "Dynamics of ultrarelativistic charged particles with strong radiation reaction. I. Aristotelian equilibrium state"
+        ],
+        "year": "2023"
+      },
+      {
+        "bibcode": "2023PhRvD.108f4010B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.064010",
+          "10.48550/arXiv.2309.04368"
+        ],
+        "title": [
+          "Can quasicircular mergers of charged black holes produce extremal black holes?"
         ],
         "year": "2023"
       },
