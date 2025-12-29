@@ -134,26 +134,6 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025PhRvD.111j4032S",
-        "author": [
-          "Smith, M. A. M.",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.111"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.111.104032",
-          "10.48550/arXiv.2412.01881"
-        ],
-        "title": [
-          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
-        ],
-        "year": "2025"
-      },
-      {
         "bibcode": "2025PhRvD.111j4031S",
         "author": [
           "Smith, M. A. M.",
@@ -170,6 +150,26 @@
         ],
         "title": [
           "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025PhRvD.111j4032S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104032",
+          "10.48550/arXiv.2412.01881"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
         ],
         "year": "2025"
       },
@@ -194,25 +194,6 @@
         "year": "2025"
       },
       {
-        "bibcode": "2024PhRvD.110d3002R",
-        "author": [
-          "Raithel, Carolyn A.",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.043002",
-          "10.48550/arXiv.2312.14046"
-        ],
-        "title": [
-          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
-        ],
-        "year": "2024"
-      },
-      {
         "bibcode": "2024PhRvD.110d4037N",
         "author": [
           "Naseri, Mahdi",
@@ -229,6 +210,25 @@
         ],
         "title": [
           "Exploring pathways to forming twin stars"
+        ],
+        "year": "2024"
+      },
+      {
+        "bibcode": "2024PhRvD.110d3002R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.043002",
+          "10.48550/arXiv.2312.14046"
+        ],
+        "title": [
+          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
         ],
         "year": "2024"
       },
