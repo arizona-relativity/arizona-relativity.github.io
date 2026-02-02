@@ -2,6 +2,30 @@
   "response": {
     "docs": [
       {
+        "bibcode": "2025PhRvD.112l4071H",
+        "author": [
+          "Hu, Zexin",
+          "Doneva, Daniela D.",
+          "Wang, Ziming",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele",
+          "Yazadjiev, Stoytcho S.",
+          "Shao, Lijing"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.112"
+        ],
+        "doi": [
+          "10.1103/ptbz-g4kx",
+          "10.48550/arXiv.2509.07111"
+        ],
+        "title": [
+          "Ringdown mode amplitudes of charged binary black holes"
+        ],
+        "year": "2025"
+      },
+      {
         "bibcode": "2025ApJ...994L..45F",
         "author": [
           "Franz, Noah",
@@ -72,30 +96,6 @@
         ],
         "title": [
           "Optimizing Kilonova Searches: A Case Study of the Type IIb SN 2025ulz in the Localization Volume of the Low-significance Gravitational Wave Event S250818k"
-        ],
-        "year": "2025"
-      },
-      {
-        "bibcode": "2025PhRvD.112l4071H",
-        "author": [
-          "Hu, Zexin",
-          "Doneva, Daniela D.",
-          "Wang, Ziming",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele",
-          "Yazadjiev, Stoytcho S.",
-          "Shao, Lijing"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.112"
-        ],
-        "doi": [
-          "10.1103/ptbz-g4kx",
-          "10.48550/arXiv.2509.07111"
-        ],
-        "title": [
-          "Ringdown mode amplitudes of charged binary black holes"
         ],
         "year": "2025"
       },
@@ -218,25 +218,6 @@
         "year": "2025"
       },
       {
-        "bibcode": "2024PhRvD.110d3002R",
-        "author": [
-          "Raithel, Carolyn A.",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.043002",
-          "10.48550/arXiv.2312.14046"
-        ],
-        "title": [
-          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
-        ],
-        "year": "2024"
-      },
-      {
         "bibcode": "2024PhRvD.110d4037N",
         "author": [
           "Naseri, Mahdi",
@@ -253,6 +234,25 @@
         ],
         "title": [
           "Exploring pathways to forming twin stars"
+        ],
+        "year": "2024"
+      },
+      {
+        "bibcode": "2024PhRvD.110d3002R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.043002",
+          "10.48550/arXiv.2312.14046"
+        ],
+        "title": [
+          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
         ],
         "year": "2024"
       },
