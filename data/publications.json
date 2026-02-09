@@ -218,6 +218,25 @@
         "year": "2025"
       },
       {
+        "bibcode": "2024PhRvD.110d3002R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.043002",
+          "10.48550/arXiv.2312.14046"
+        ],
+        "title": [
+          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
+        ],
+        "year": "2024"
+      },
+      {
         "bibcode": "2024PhRvD.110d4037N",
         "author": [
           "Naseri, Mahdi",
@@ -234,25 +253,6 @@
         ],
         "title": [
           "Exploring pathways to forming twin stars"
-        ],
-        "year": "2024"
-      },
-      {
-        "bibcode": "2024PhRvD.110d3002R",
-        "author": [
-          "Raithel, Carolyn A.",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.043002",
-          "10.48550/arXiv.2312.14046"
-        ],
-        "title": [
-          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
         ],
         "year": "2024"
       },
@@ -276,6 +276,25 @@
         "year": "2023"
       },
       {
+        "bibcode": "2023PhRvD.108f4010B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.064010",
+          "10.48550/arXiv.2309.04368"
+        ],
+        "title": [
+          "Can quasicircular mergers of charged black holes produce extremal black holes?"
+        ],
+        "year": "2023"
+      },
+      {
         "bibcode": "2023PhRvD.108f3018C",
         "author": [
           "Cai, Yangyang",
@@ -292,25 +311,6 @@
         ],
         "title": [
           "Dynamics of ultrarelativistic charged particles with strong radiation reaction. I. Aristotelian equilibrium state"
-        ],
-        "year": "2023"
-      },
-      {
-        "bibcode": "2023PhRvD.108f4010B",
-        "author": [
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.108"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.108.064010",
-          "10.48550/arXiv.2309.04368"
-        ],
-        "title": [
-          "Can quasicircular mergers of charged black holes produce extremal black holes?"
         ],
         "year": "2023"
       },
