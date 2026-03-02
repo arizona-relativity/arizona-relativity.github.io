@@ -100,6 +100,25 @@
         "year": "2025"
       },
       {
+        "bibcode": "2025ApJ...993..176W",
+        "author": [
+          "Wen, Sixiang",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "ApJ",
+          "ApJ...993"
+        ],
+        "doi": [
+          "10.3847/1538-4357/ae0b5b",
+          "10.48550/arXiv.2508.15150"
+        ],
+        "title": [
+          "A Pseudo-Newtonian Stationary Circumbinary Slim Disk Model"
+        ],
+        "year": "2025"
+      },
+      {
         "bibcode": "2025PhRvD.112j3050M",
         "author": [
           "Manikantan, Vikram",
@@ -119,21 +138,166 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025ApJ...993..176W",
+        "bibcode": "2025LRR....28....9L",
         "author": [
-          "Wen, Sixiang",
-          "Paschalidis, Vasileios"
+          "LISA Consortium Waveform Working Group",
+          "Afshordi, Niayesh",
+          "Akçay, Sarp",
+          "Seoane, Pau Amaro",
+          "Antonelli, Andrea",
+          "Aurrekoetxea, Josu C.",
+          "Barack, Leor",
+          "Barausse, Enrico",
+          "Benkel, Robert",
+          "Bernard, Laura",
+          "Bernuzzi, Sebastiano",
+          "Berti, Emanuele",
+          "Bonetti, Matteo",
+          "Bonga, Béatrice",
+          "Bozzola, Gabriele",
+          "Brito, Richard",
+          "Buonanno, Alessandra",
+          "Cárdenas-Avendaño, Alejandro",
+          "Casals, Marc",
+          "Chernoff, David F.",
+          "Chua, Alvin J. K.",
+          "Clough, Katy",
+          "Colleoni, Marta",
+          "Compère, Geoffrey",
+          "Dhesi, Mekhi",
+          "Druart, Adrien",
+          "Durkan, Leanne",
+          "Faye, Guillaume",
+          "Ferguson, Deborah",
+          "Field, Scott E.",
+          "Gabella, William E.",
+          "García-Bellido, Juan",
+          "Gracia-Linares, Miguel",
+          "Gerosa, Davide",
+          "Green, Stephen R.",
+          "Haney, Maria",
+          "Hannam, Mark",
+          "Heffernan, Anna",
+          "Hinderer, Tanja",
+          "Helfer, Thomas",
+          "Hughes, Scott A.",
+          "Husa, Sascha",
+          "Isoyama, Soichiro",
+          "Katz, Michael L.",
+          "Kavanagh, Chris",
+          "Khanna, Gaurav",
+          "Kidder, Larry E.",
+          "Korol, Valeriya",
+          "Küchler, Lorenzo",
+          "Laguna, Pablo",
+          "Larrouturou, François",
+          "Tiec, Alexandre Le",
+          "Leather, Benjamin",
+          "Lim, Eugene A.",
+          "Lim, Hyun",
+          "Littenberg, Tyson B.",
+          "Long, Oliver",
+          "Lousto, Carlos O.",
+          "Lovelace, Geoffrey",
+          "Lukes-Gerakopoulos, Georgios",
+          "Lynch, Philip",
+          "Macedo, Rodrigo P.",
+          "Markakis, Charalampos",
+          "Maggio, Elisa",
+          "Mandel, Ilya",
+          "Maselli, Andrea",
+          "Mathews, Josh",
+          "Mourier, Pierre",
+          "Neilsen, David",
+          "Nagar, Alessandro",
+          "Nichols, David A.",
+          "Novák, Jan",
+          "Okounkova, Maria",
+          "O'Shaughnessy, Richard",
+          "Oshita, Naritaka",
+          "O'Toole, Conor",
+          "Pan, Zhen",
+          "Pani, Paolo",
+          "Pappas, George",
+          "Paschalidis, Vasileios",
+          "Pfeiffer, Harald P.",
+          "Pompili, Lorenzo",
+          "Pound, Adam",
+          "Pratten, Geraint",
+          "Rüter, Hannes R.",
+          "Ruiz, Milton",
+          "Sam, Zeyd",
+          "Sberna, Laura",
+          "Shapiro, Stuart L.",
+          "Shoemaker, Deirdre M.",
+          "Sopuerta, Carlos F.",
+          "Spiers, Andrew",
+          "Sundar, Hari",
+          "Tamanini, Nicola",
+          "Thompson, Jonathan E.",
+          "Toubiana, Alexandre",
+          "Tsokaros, Antonios",
+          "Upton, Samuel D.",
+          "van de Meent, Maarten",
+          "Vernieri, Daniele",
+          "Wachter, Jeremy M.",
+          "Warburton, Niels",
+          "Wardell, Barry",
+          "Witek, Helvi",
+          "Witzany, Vojtěch",
+          "Yang, Huan",
+          "Zilhão, Miguel",
+          "Albertini, Angelica",
+          "Arun, K. G.",
+          "Bezares, Miguel",
+          "Bonilla, Alexander",
+          "Chapman-Bird, Christian",
+          "Cownden, Bradley",
+          "Cunningham, Kevin",
+          "Devitt, Chris",
+          "Dolan, Sam",
+          "Duque, Francisco",
+          "Dyson, Conor",
+          "Fryer, Chris L.",
+          "Gair, Jonathan R.",
+          "Giacomazzo, Bruno",
+          "Gupta, Priti",
+          "Han, Wen-Biao",
+          "Haas, Roland",
+          "Hirschmann, Eric W.",
+          "Huerta, E. A.",
+          "Jetzer, Philippe",
+          "Kelly, Bernard",
+          "Khalil, Mohammed",
+          "Lewis, Jack",
+          "Lloyd-Ronning, Nicole",
+          "Marsat, Sylvain",
+          "Nardini, Germano",
+          "Neef, Jakob",
+          "Ottewill, Adrian",
+          "Pantelidou, Christiana",
+          "Piovano, Gabriel Andres",
+          "Redondo-Yuste, Jaime",
+          "Sagunski, Laura",
+          "Stein, Leo C.",
+          "Skoupý, Viktor",
+          "Sperhake, Ulrich",
+          "Speri, Lorenzo",
+          "Spieksma, Thomas F. M.",
+          "Stevens, Chris",
+          "Trestini, David",
+          "Vañó-Viñuales, Alex"
         ],
         "bibstem": [
-          "ApJ",
-          "ApJ...993"
+          "LRR",
+          "LRR....28"
         ],
         "doi": [
-          "10.3847/1538-4357/ae0b5b",
-          "10.48550/arXiv.2508.15150"
+          "10.1007/s41114-025-00056-1",
+          "10.48550/arXiv.2311.01300"
         ],
         "title": [
-          "A Pseudo-Newtonian Stationary Circumbinary Slim Disk Model"
+          "Waveform modelling for the Laser Interferometer Space Antenna"
         ],
         "year": "2025"
       },
@@ -154,6 +318,26 @@
         ],
         "title": [
           "Effects of eccentricity on accreting binary black holes: MHD simulations in full GR reveal novel periodicities in jet power and synchrotron spectra"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025PhRvD.111j4032S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104032",
+          "10.48550/arXiv.2412.01881"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
         ],
         "year": "2025"
       },
@@ -198,24 +382,24 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025PhRvD.111j4032S",
+        "bibcode": "2024PhRvD.110d4037N",
         "author": [
-          "Smith, M. A. M.",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
+          "Naseri, Mahdi",
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
         ],
         "bibstem": [
           "PhRvD",
-          "PhRvD.111"
+          "PhRvD.110"
         ],
         "doi": [
-          "10.1103/PhysRevD.111.104032",
-          "10.48550/arXiv.2412.01881"
+          "10.1103/PhysRevD.110.044037",
+          "10.48550/arXiv.2406.15544"
         ],
         "title": [
-          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
+          "Exploring pathways to forming twin stars"
         ],
-        "year": "2025"
+        "year": "2024"
       },
       {
         "bibcode": "2024PhRvD.110d3002R",
@@ -233,26 +417,6 @@
         ],
         "title": [
           "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
-        ],
-        "year": "2024"
-      },
-      {
-        "bibcode": "2024PhRvD.110d4037N",
-        "author": [
-          "Naseri, Mahdi",
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.044037",
-          "10.48550/arXiv.2406.15544"
-        ],
-        "title": [
-          "Exploring pathways to forming twin stars"
         ],
         "year": "2024"
       },
@@ -276,6 +440,25 @@
         "year": "2023"
       },
       {
+        "bibcode": "2023PhRvD.108f4010B",
+        "author": [
+          "Bozzola, Gabriele",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.108"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.108.064010",
+          "10.48550/arXiv.2309.04368"
+        ],
+        "title": [
+          "Can quasicircular mergers of charged black holes produce extremal black holes?"
+        ],
+        "year": "2023"
+      },
+      {
         "bibcode": "2023PhRvD.108f3018C",
         "author": [
           "Cai, Yangyang",
@@ -292,25 +475,6 @@
         ],
         "title": [
           "Dynamics of ultrarelativistic charged particles with strong radiation reaction. I. Aristotelian equilibrium state"
-        ],
-        "year": "2023"
-      },
-      {
-        "bibcode": "2023PhRvD.108f4010B",
-        "author": [
-          "Bozzola, Gabriele",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.108"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.108.064010",
-          "10.48550/arXiv.2309.04368"
-        ],
-        "title": [
-          "Can quasicircular mergers of charged black holes produce extremal black holes?"
         ],
         "year": "2023"
       },
