@@ -21,6 +21,30 @@
         "year": "2026"
       },
       {
+        "bibcode": "2025PhRvD.112l4071H",
+        "author": [
+          "Hu, Zexin",
+          "Doneva, Daniela D.",
+          "Wang, Ziming",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele",
+          "Yazadjiev, Stoytcho S.",
+          "Shao, Lijing"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.112"
+        ],
+        "doi": [
+          "10.1103/ptbz-g4kx",
+          "10.48550/arXiv.2509.07111"
+        ],
+        "title": [
+          "Ringdown mode amplitudes of charged binary black holes"
+        ],
+        "year": "2025"
+      },
+      {
         "bibcode": "2025ApJ...994L..45F",
         "author": [
           "Franz, Noah",
@@ -91,30 +115,6 @@
         ],
         "title": [
           "Optimizing Kilonova Searches: A Case Study of the Type IIb SN 2025ulz in the Localization Volume of the Low-significance Gravitational Wave Event S250818k"
-        ],
-        "year": "2025"
-      },
-      {
-        "bibcode": "2025PhRvD.112l4071H",
-        "author": [
-          "Hu, Zexin",
-          "Doneva, Daniela D.",
-          "Wang, Ziming",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele",
-          "Yazadjiev, Stoytcho S.",
-          "Shao, Lijing"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.112"
-        ],
-        "doi": [
-          "10.1103/ptbz-g4kx",
-          "10.48550/arXiv.2509.07111"
-        ],
-        "title": [
-          "Ringdown mode amplitudes of charged binary black holes"
         ],
         "year": "2025"
       },
@@ -341,26 +341,6 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025PhRvD.111j4031S",
-        "author": [
-          "Smith, M. A. M.",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.111"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.111.104031",
-          "10.48550/arXiv.2411.11960"
-        ],
-        "title": [
-          "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
-        ],
-        "year": "2025"
-      },
-      {
         "bibcode": "2025PhRvD.111j4032S",
         "author": [
           "Smith, M. A. M.",
@@ -377,6 +357,26 @@
         ],
         "title": [
           "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025PhRvD.111j4031S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104031",
+          "10.48550/arXiv.2411.11960"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
         ],
         "year": "2025"
       },
