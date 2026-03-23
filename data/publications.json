@@ -341,26 +341,6 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025PhRvD.111j4032S",
-        "author": [
-          "Smith, M. A. M.",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.111"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.111.104032",
-          "10.48550/arXiv.2412.01881"
-        ],
-        "title": [
-          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
-        ],
-        "year": "2025"
-      },
-      {
         "bibcode": "2025PhRvD.111j4031S",
         "author": [
           "Smith, M. A. M.",
@@ -377,6 +357,26 @@
         ],
         "title": [
           "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025PhRvD.111j4032S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104032",
+          "10.48550/arXiv.2412.01881"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
         ],
         "year": "2025"
       },
