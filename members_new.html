@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Members — Arizona Relativity</title>
+  <link rel="icon" type="image/png" href="img/logo_circle_gradient.png">
+  <link rel="stylesheet" href="css/new.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="index_new.html">
+        <div class="logo-dot"></div>
+        Arizona Relativity
+      </a>
+      <nav>
+        <a href="index_new.html">Home</a>
+        <a href="science_new.html">Science</a>
+        <a href="members_new.html" class="active">Members</a>
+        <a href="compass.html">COMPASS ↗</a>
+      </nav>
+    </div>
+  </header>
+<main>
+
+  <section>
+    <h2>Current Members</h2>
+    <div class="grid-3">
+  <button class="member-card" onclick="openModal('members',0)" type="button">
+    <div class="member-row">
+      <img class="avatar" src="img/members/vasilis.jpg" alt="Vasileios Paschalidis"
+           loading="lazy"
+           onerror="this.outerHTML='<div class=avatar-ph></div>'">
+      <div>
+        <div class="member-name">Vasileios Paschalidis</div>
+        <div class="member-role">Professor</div>
+      </div>
+    </div>
+    <p class="member-bio">Things</p>
+  </button>
+  <button class="member-card" onclick="openModal('members',1)" type="button">
+    <div class="member-row">
+      <img class="avatar" src="img/members/erik.jpg" alt="Erik Wessel"
+           loading="lazy"
+           onerror="this.outerHTML='<div class=avatar-ph></div>'">
+      <div>
+        <div class="member-name">Erik Wessel</div>
+        <div class="member-role">PhD Candidate</div>
+      </div>
+    </div>
+    <p class="member-bio">Other things</p>
+  </button>
+  <button class="member-card" onclick="openModal('members',2)" type="button">
+    <div class="member-row">
+      <img class="avatar" src="img/members/m.jpg" alt="M Smith"
+           loading="lazy"
+           onerror="this.outerHTML='<div class=avatar-ph></div>'">
+      <div>
+        <div class="member-name">M Smith</div>
+        <div class="member-role">PhD Candidate</div>
+      </div>
+    </div>
+    <p class="member-bio">Also other things</p>
+  </button>
+  <button class="member-card" onclick="openModal('members',3)" type="button">
+    <div class="member-row">
+      <img class="avatar" src="img/members/mahdi.jpg" alt="Mahdi Naseri"
+           loading="lazy"
+           onerror="this.outerHTML='<div class=avatar-ph></div>'">
+      <div>
+        <div class="member-name">Mahdi Naseri</div>
+        <div class="member-role">PhD Candidate</div>
+      </div>
+    </div>
+    <p class="member-bio">Also other things</p>
+  </button>
+  <button class="member-card" onclick="openModal('members',4)" type="button">
+    <div class="member-row">
+      <img class="avatar" src="img/members/vikram.jpg" alt="Vikram Manikantan"
+           loading="lazy"
+           onerror="this.outerHTML='<div class=avatar-ph></div>'">
+      <div>
+        <div class="member-name">Vikram Manikantan</div>
+        <div class="member-role">PhD Candidate</div>
+      </div>
+    </div>
+    <p class="member-bio">Binary Black Hole Accretion, Multimessenger Astronomy, Jet Emission</p>
+  </button></div>
+
+    <h2 style="margin-top:3rem">Past Members</h2>
+    <div class="grid-3">
+  <button class="member-card" onclick="openModal('pastMembers',0)" type="button">
+    <div class="member-row">
+      <img class="avatar" src="img/members/person1.jpg" alt="Person 1"
+           loading="lazy"
+           onerror="this.outerHTML='<div class=avatar-ph></div>'">
+      <div>
+        <div class="member-name">Person 1</div>
+        <div class="member-role">Doing something @ somewhere</div>
+      </div>
+    </div>
+    
+  </button></div>
+  </section>
+  
+</main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 Arizona Relativity Group · Steward Observatory</span>
+      <div class="footer-links">
+        <a href="https://astro.arizona.edu/" target="_blank" rel="noopener">Steward Observatory</a>
+        <a href="https://astro.arizona.edu/research-groups/theoretical-astrophysics-program" target="_blank" rel="noopener">TAP</a>
+        <a href="https://ui.adsabs.harvard.edu/search/q=orcid:0000-0002-8099-9023&sort=date%20desc" target="_blank" rel="noopener">ADS Publications</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal-backdrop" class="modal-backdrop">
+    <div id="modal-panel" class="modal-panel" role="dialog" aria-modal="true">
+      <button id="modal-close" class="modal-close">Close</button>
+
+      <div id="modal-header"></div>
+
+      <div class="modal-body">
+        <div id="modal-avatar-wrap">
+          <img id="modal-avatar" class="modal-avatar" alt="">
+        </div>
+        <div id="modal-title"    class="modal-title"></div>
+        <div id="modal-subtitle" class="modal-subtitle"></div>
+        <div id="modal-text"     class="modal-text"></div>
+        <div id="modal-links"    class="modal-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>window.SITE = {"members":[{"name":"Vasileios Paschalidis","role":"Professor","email":"vpaschal@gmail.com","bio":"Things","photo":"img/members/vasilis.jpg","photoAlt":"Vasileios Paschalidis","links":{"website":"#","scholar":"#"}},{"name":"Erik Wessel","role":"PhD Candidate","email":"ekwessel@arizona.edu","bio":"Other things","photo":"img/members/erik.jpg","photoAlt":"Erik Wessel","links":{"github":"#"}},{"name":"M Smith","role":"PhD Candidate","email":"mamsmith@arizona.edu","bio":"Also other things","photo":"img/members/m.jpg","photoAlt":"M Smith","links":{"linkedin":"#"}},{"name":"Mahdi Naseri","role":"PhD Candidate","email":"mnaseri@arizona.edu","bio":"Also other things","photo":"img/members/mahdi.jpg","photoAlt":"Mahdi Naseri","links":{"linkedin":"#"}},{"name":"Vikram Manikantan","role":"PhD Candidate","email":"vik@arizona.edu","bio":"Binary Black Hole Accretion, Multimessenger Astronomy, Jet Emission","photo":"img/members/vikram.jpg","photoAlt":"Vikram Manikantan","links":{"Publications":"https://ui.adsabs.harvard.edu/search/q=author%3A%22Manikantan%2C%20Vikram%22","GitHub":"https://github.com/vikrammanikantan","Personal Website":"https://www.vikrammanikantan.com"}}],"pastMembers":[{"name":"Person 1","role":"Doing something @ somewhere","email":"","bio":"","photo":"img/members/person1.jpg","photoAlt":"Person 1","links":{"website":"#"}}],"pillars":[{"tag":"Numerical Relativity","blurb":"Solving Einstein's equations on a computer to model dynamical spacetimes.","details":"<p><strong>What it is:</strong> Numerical Relativity solves Einstein's field equations using supercomputers. We discretize spacetime (3+1 split) and evolve it in time to study strong-gravity events like black hole or neutron star mergers.</p><p style=\"margin-top:0.5rem\"><strong>Why it matters:</strong> It predicts the precise gravitational waveforms detected by LIGO/Virgo/KAGRA and provides the spacetime \"stage\" on which gas and light move.</p><ul style=\"margin-top:0.75rem;padding-left:1.25rem\"><li>3+1 formulations (BSSN/CCZ4)</li><li>Horizon finding &amp; remnant properties</li><li>Coupling to matter/radiation models</li></ul>","image":"img/pillars/numerical-relativity.jpg","imageAlt":"Numerical relativity visualization"},{"tag":"GRMHD","blurb":"General-relativistic magnetohydrodynamics of disks and jets around black holes.","details":"<p><strong>What it is:</strong> GRMHD models the plasma flowing near black holes, including magnetic fields, shocks, and turbulence — all in curved spacetime.</p><p style=\"margin-top:0.5rem\"><strong>Why it matters:</strong> Why it matters.</p><ul style=\"margin-top:0.75rem;padding-left:1.25rem\"><li>Application 1</li><li>Application 2</li></ul>","image":"img/pillars/grmhd.png","imageAlt":"GRMHD simulation"},{"tag":"Radiation","blurb":"Connecting gravitational waves with electromagnetic and neutrino signals.","details":"<p><strong>What it is:</strong> Blurb.</p><p style=\"margin-top:0.5rem\"><strong>Why it matters:</strong> Blurb.</p><ul style=\"margin-top:0.75rem;padding-left:1.25rem\"><li>Application 1</li><li>Application 2</li></ul>","image":"","imageAlt":"Radiation transport rendering"}],"highlights":[{"tag":"GRMHD + Radiation Transport","title":"Coincident Multimessenger Bursts from Eccentric Supermassive Black Holes","blurb":"Blurb 1","more":"More information about this highlight.","link":"extras/highlight1.html","image":"assets/img/highlights/coincident.jpg","imageAlt":"Coincident multimessenger bursts"},{"tag":"Tag 2","title":"Title 2","blurb":"Blurb 2","more":"More information about this highlight.","link":"extras/highlight2.html","image":"assets/img/highlights/tilted-disks.jpg","imageAlt":"Title 2"},{"tag":"Tag 3","title":"Title 3","blurb":"Blurb 3","more":"More information about this highlight.","link":"extras/highlight3.html","image":"assets/img/highlights/tilted-disks.jpg","imageAlt":"Title 3"}],"projects":[{"area":"GRMHD + Radiation Transport","title":"Coincident Multimessenger Bursts from Eccentric Supermassive Black Holes","desc":"Blurb 1","highlights":["Variable Dual-jet Launching","Multimessenger Science"],"more":"More information about this project.","link":"extras/coincident.html","image":"assets/img/highlights/coincident.jpg","imageAlt":"Coincident Multimessenger Bursts from Eccentric Supermassive Black Holes"}]};</script>
+  <script src="js/modal-new.js"></script>
+</body>
+</html>
