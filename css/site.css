@@ -39,7 +39,6 @@ body {
 
 .member-placeholder {
     flex: 0 0 3rem;
-    /* don’t grow or shrink, 3rem wide */
     height: 3rem;
     border-radius: 9999px;
     background: linear-gradient(135deg, var(--ua-blue), var(--ua-red));

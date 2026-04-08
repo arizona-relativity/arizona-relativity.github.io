@@ -1,6 +1,6 @@
 # Website
 
-Developed by Vikram Manikantan & ChatGPT-5 (a lot of it). 
+Developed by Vikram Manikantan, ChatGPT-5, and Claude. 
 
 
 ## Adding yourself to the website:

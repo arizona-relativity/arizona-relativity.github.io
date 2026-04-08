@@ -7,7 +7,7 @@ function renderMembers() {
     members.forEach((m, i) => {
         const btn = document.createElement("button");
         btn.type = "button";
-        btn.className = "text-left rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition";
+        btn.className = "text-left border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition";
         btn.onclick = () => openMemberModal(i);
         btn.innerHTML = `
                         <div class="flex items-center gap-4">
@@ -58,7 +58,7 @@ function renderProjects() {
     projects.forEach((p, i) => {
         const btn = document.createElement("button");
         btn.type = "button";
-        btn.className = "text-left rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition overflow-hidden";
+        btn.className = "text-left border border-white/10 bg-white/5 hover:bg-white/10 transition overflow-hidden";
         btn.onclick = () => openProjectModal(i);
         btn.innerHTML = `
                     ${headerBlock(p.image, p.imageAlt, "h-36")}
@@ -79,7 +79,7 @@ function renderHighlights() {
     highlights.forEach((h, i) => {
         const btn = document.createElement("button");
         btn.type = "button";
-        btn.className = "text-left rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition overflow-hidden";
+        btn.className = "text-left border border-white/10 bg-white/5 hover:bg-white/10 transition overflow-hidden";
         btn.onclick = () => openHighlightModal(i);
         btn.innerHTML = `
                     ${headerBlock(h.image, h.imageAlt, "h-32")}
@@ -103,7 +103,7 @@ function renderPillars() {
     pillars.forEach((p, i) => {
         const btn = document.createElement("button");
         btn.type = "button";
-        btn.className = "text-left rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition overflow-hidden";
+        btn.className = "text-left border border-white/10 bg-white/5 hover:bg-white/10 transition overflow-hidden";
         btn.onclick = () => openPillarModal(i);
         btn.innerHTML = `
                     ${headerBlock(p.image, p.imageAlt, "h-32")}
@@ -146,7 +146,7 @@ function renderMemberGrid(list, gridId, onOpen) {
     list.forEach((m, i) => {
         const btn = document.createElement("button");
         btn.type = "button";
-        btn.className = "text-left rounded-2xl border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition";
+        btn.className = "text-left border border-white/10 bg-white/5 p-5 hover:bg-white/10 transition";
         btn.onclick = () => onOpen(i);
         btn.innerHTML = `
             <div class="flex items-center gap-4">
