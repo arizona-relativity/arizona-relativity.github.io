@@ -47,13 +47,21 @@ jobs:
           curl -sS -H "Authorization: Bearer $ADS_API_TOKEN" "$URL" \
             | jq '{response:{docs:.response.docs}}' > data/publications.json
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Rebuild static HTML
+        run: node build.js
+
       - name: Commit changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/publications.json
-            git commit -m "Update publications.json from ADS"
+            git add data/publications.json index_new.html science_new.html members_new.html
+            git commit -m "Update publications and rebuild HTML"
             git push
           else
             echo "No changes to commit."

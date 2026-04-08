@@ -1,0 +1,39 @@
+name: Build site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/site.json"
+      - "build.js"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run build
+        run: node build.js
+
+      - name: Commit generated HTML
+        run: |
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index_new.html science_new.html members_new.html
+            git commit -m "Rebuild static HTML from site.json"
+            git push
+          else
+            echo "No changes to commit."
+          fi
