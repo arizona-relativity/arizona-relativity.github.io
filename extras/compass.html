@@ -113,10 +113,29 @@
     <section id="materials" class="page">
       <div class="max-w-5xl mx-auto px-4 py-10">
         <div class="card p-6 md:p-8">
-          <h2 class="text-2xl md:text-3xl font-semibold mb-3">Materials</h2>
-          <p class="mb-3">
-            You can find all program materials at this <a href="https://github.com/vikrammanikantan/compass" target="_blank">GitHub repository</a>
-          </p>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-5">Materials</h2>
+
+          <!-- GitHub repo card -->
+          <a id="gh-repo-card" href="https://github.com/arizona-relativity/compass" target="_blank"
+             class="flex items-start gap-4 rounded-xl border border-white/15 bg-white/5 p-5 mb-6 hover:bg-white/10 transition-colors no-underline">
+            <!-- GitHub mark -->
+            <svg class="shrink-0 mt-0.5 opacity-70" width="28" height="28" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
+            </svg>
+            <div class="min-w-0">
+              <p id="gh-repo-name" class="font-semibold text-white text-base mb-1">arizona-relativity/compass</p>
+              <p id="gh-repo-desc" class="text-sm text-gray-400 mb-3">Loading…</p>
+              <div class="flex flex-wrap gap-4 text-xs text-gray-400">
+                <span id="gh-repo-lang" class="hidden">● <span></span></span>
+                <span id="gh-repo-stars" class="hidden flex items-center gap-1">
+                  <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+                  <span></span>
+                </span>
+                <span id="gh-repo-updated" class="hidden"></span>
+              </div>
+            </div>
+          </a>
+
           <p>
             Additionally, we provide 'work-along' python notebooks for
             <a href="https://colab.research.google.com/drive/1Usb8Kb2WwW-CPDYKnxulZc0f7beIYsDT" target="_blank">Python basics</a>,
@@ -140,41 +159,81 @@
       </div>
     </section>
 
+    
+
     <!-- SCHEDULE (content unchanged) -->
     <section id="schedule" class="page">
       <div class="max-w-5xl mx-auto px-4 py-10">
         <div class="card p-6 md:p-8">
-          <h2 class="text-2xl md:text-3xl font-semibold mb-3">Schedule</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6">Schedule</h2>
 
-          <h3 class="text-xl font-semibold mb-1">Monday [<a href="https://arizona.box.com/s/d7zgjzjh76fwftvv7j370hrovdskiv2n">recording</a>]</h3>
-          <p><em>10am-10:30am:</em> Introductions & Pre-workshop survey</p>
-          <p><em>10:30am-noon:</em> Intro to Python with Hands-on Experience</p>
-          <p><em>noon-1pm:</em> Lunch (provided)</p>
-          <p class="mb-4"><em>1pm-2pm:</em> Python Hands-on experience</p>
+          <!-- 2026 -->
+          <div class="rounded-xl border border-white/15 bg-white/5 p-5 mb-6">
+            <h3 class="text-xl font-bold mb-4 tracking-wide" style="color:var(--ua-red)">2026</h3>
 
-          <h3 class="text-xl font-semibold mb-1">Tuesday [<a href="https://arizona.box.com/s/63xgfwsuoyznz0rh7c1i26zb8y1etkbh">recording</a>]</h3>
-          <p><em>10am-11am:</em> Python Loops & Functions</p>
-          <p><em>11am-noon:</em> Data Visualization with Matplotlib & Numpy</p>
-          <p><em>noon-1pm:</em> Lunch (provided)</p>
-          <p class="mb-4"><em>1pm-2pm:</em> Data Visualization Continued</p>
+            <h4 class="text-base font-semibold mb-1">March 26</h4>
+            <p>Introductions</p>
+            <p class="mb-4">Intro to Python &amp; Hands-on Experience</p>
 
-          <h3 class="text-xl font-semibold mb-1">Wednesday [<a href="https://arizona.box.com/s/35a2wawuo16zqfapwnob1fedtk5j3x24">recording</a>]</h3>
-          <p><em>10am-11am:</em> Intro to Linux (pdf notes will be provided)</p>
-          <p><em>10:30am-noon:</em> Bash scripting 1</p>
-          <p><em>noon-1pm:</em> Lunch (provided)</p>
-          <p class="mb-4"><em>1pm-2pm:</em> Bash scripting 2</p>
+            <h4 class="text-base font-semibold mb-1">April 2</h4>
+            <p>More Python &amp; Hands-on Experience</p>
+            <p class="mb-4">Debugging</p>
 
-          <h3 class="text-xl font-semibold mb-1">Thursday [<a href="https://arizona.box.com/s/dfrsaziv2kbcgeyc8kwx8q2bbkvdzmdl">recording</a>]</h3>
-          <p><em>10am-11:15am:</em> Bash Scripting 3</p>
-          <p><em>11:15am-noon:</em> Hands-on with HPC 1</p>
-          <p><em>noon-1pm:</em> Lunch (provided)</p>
-          <p class="mb-4"><em>1pm-2pm:</em> Hands-on with HPC 2</p>
+            <h4 class="text-base font-semibold mb-1">April 9</h4>
+            <p>Intro to Linux (pdf notes will be provided)</p>
+            <p class="mb-4">Hands-on with bash within HPC</p>
 
-          <h3 class="text-xl font-semibold mb-1">Friday</h3>
-          <p><em>10am-11am:</em> Github Basics</p>
-          <p><em>11am-11:45am:</em> Latex and Overleaf</p>
-          <p><em>11:45am-noon:</em> post-workshop survey</p>
-          <p> End! </p>
+            <h4 class="text-base font-semibold mb-1">April 16</h4>
+            <p>Bash scripting</p>
+            <p class="mb-4">Hands-on with bash within HPC</p>
+
+            <h4 class="text-base font-semibold mb-1">April 23</h4>
+            <p class="mb-4">Matplotlib/Numpy/Hands-on experience</p>
+
+            <h4 class="text-base font-semibold mb-1">April 30</h4>
+            <p>Overleaf/Latex hands-on experience</p>
+            <p class="mb-4">Post-workshop survey</p>
+
+            <h4 class="text-base font-semibold mb-1">May 7</h4>
+            <p>Github Basics</p>
+            <p>Github Advanced (Working with other packages)</p>
+            <p>Answering any questions</p>
+          </div>
+
+          <!-- 2024 -->
+          <div class="rounded-xl border border-white/15 bg-white/5 p-5">
+            <h3 class="text-xl font-bold mb-4 tracking-wide" style="color:var(--ua-red)">2024</h3>
+
+            <h4 class="text-base font-semibold mb-1">Monday [<a href="https://arizona.box.com/s/d7zgjzjh76fwftvv7j370hrovdskiv2n">2024 recording</a>]</h4>
+            <p><em>10am-10:30am:</em> Introductions & Pre-workshop survey</p>
+            <p><em>10:30am-noon:</em> Intro to Python with Hands-on Experience</p>
+            <p><em>noon-1pm:</em> Lunch (provided)</p>
+            <p class="mb-4"><em>1pm-2pm:</em> Python Hands-on experience</p>
+
+            <h4 class="text-base font-semibold mb-1">Tuesday [<a href="https://arizona.box.com/s/63xgfwsuoyznz0rh7c1i26zb8y1etkbh">2024 recording</a>]</h4>
+            <p><em>10am-11am:</em> Python Loops & Functions</p>
+            <p><em>11am-noon:</em> Data Visualization with Matplotlib & Numpy</p>
+            <p><em>noon-1pm:</em> Lunch (provided)</p>
+            <p class="mb-4"><em>1pm-2pm:</em> Data Visualization Continued</p>
+
+            <h4 class="text-base font-semibold mb-1">Wednesday [<a href="https://arizona.box.com/s/35a2wawuo16zqfapwnob1fedtk5j3x24">2024 recording</a>]</h4>
+            <p><em>10am-11am:</em> Intro to Linux (pdf notes will be provided)</p>
+            <p><em>10:30am-noon:</em> Bash scripting 1</p>
+            <p><em>noon-1pm:</em> Lunch (provided)</p>
+            <p class="mb-4"><em>1pm-2pm:</em> Bash scripting 2</p>
+
+            <h4 class="text-base font-semibold mb-1">Thursday [<a href="https://arizona.box.com/s/dfrsaziv2kbcgeyc8kwx8q2bbkvdzmdl">2024 recording</a>]</h4>
+            <p><em>10am-11:15am:</em> Bash Scripting 3</p>
+            <p><em>11:15am-noon:</em> Hands-on with HPC 1</p>
+            <p><em>noon-1pm:</em> Lunch (provided)</p>
+            <p class="mb-4"><em>1pm-2pm:</em> Hands-on with HPC 2</p>
+
+            <h4 class="text-base font-semibold mb-1">Friday</h4>
+            <p><em>10am-11am:</em> Github Basics</p>
+            <p><em>11am-11:45am:</em> Latex and Overleaf</p>
+            <p><em>11:45am-noon:</em> post-workshop survey</p>
+            <p>End!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -226,7 +285,7 @@
   <!-- Footer -->
   <footer class="border-t border-white/10 bg-black/70">
     <div class="max-w-5xl mx-auto px-4 py-8 text-sm flex items-center justify-between text-gray-400">
-      <div>COMPASS &copy; 2024</div>
+      <div>COMPASS &copy; 2026</div>
       <div class="flex gap-2">
         <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" href="#materials" data-nav>Materials</a>
         <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" href="#contact" data-nav>Contact</a>
@@ -234,6 +293,40 @@
       </div>
     </div>
   </footer>
+
+<script>
+/* GitHub repo card */
+fetch('https://api.github.com/repos/arizona-relativity/compass')
+  .then(r => r.json())
+  .then(data => {
+    const desc = document.getElementById('gh-repo-desc');
+    const lang = document.getElementById('gh-repo-lang');
+    const stars = document.getElementById('gh-repo-stars');
+    const updated = document.getElementById('gh-repo-updated');
+
+    if (data.description) desc.textContent = data.description;
+    else desc.textContent = '';
+
+    if (data.language) {
+      lang.querySelector('span').textContent = data.language;
+      lang.classList.remove('hidden');
+    }
+
+    if (data.stargazers_count != null) {
+      stars.querySelector('span').textContent = data.stargazers_count;
+      stars.classList.remove('hidden');
+    }
+
+    if (data.pushed_at) {
+      const d = new Date(data.pushed_at);
+      updated.textContent = 'Updated ' + d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      updated.classList.remove('hidden');
+    }
+  })
+  .catch(() => {
+    document.getElementById('gh-repo-desc').textContent = 'View on GitHub';
+  });
+</script>
 
 <script>
 /* Smooth scrolling is CSS; this just highlights the active nav link as you scroll */
