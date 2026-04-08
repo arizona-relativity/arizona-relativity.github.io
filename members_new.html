@@ -26,7 +26,7 @@
 <main>
 
   <section>
-    <h1 style="margin-bottom:1rem">Current Members</h1>
+    <h2>Current Members</h2>
     <div class="grid-3">
   <button class="member-card" onclick="openModal('members',0)" type="button">
     <div class="member-row">
@@ -89,7 +89,7 @@
     <p class="member-bio">Binary Black Hole Accretion, Multimessenger Astronomy, Jet Emission</p>
   </button></div>
 
-    <h1 style="margin-top:3rem; margin-bottom: 1rem;">Past Members</h1>
+    <h2 style="margin-top:3rem">Past Members</h2>
     <div class="grid-3">
   <button class="member-card" onclick="openModal('pastMembers',0)" type="button">
     <div class="member-row">
@@ -125,11 +125,15 @@
       <div id="modal-header"></div>
 
       <div class="modal-body">
-        <div id="modal-avatar-wrap">
-          <img id="modal-avatar" class="modal-avatar" alt="">
+        <div class="modal-member-top">
+          <div id="modal-avatar-wrap">
+            <img id="modal-avatar" class="modal-avatar" alt="">
+          </div>
+          <div id="modal-member-info">
+            <div id="modal-title"    class="modal-title"></div>
+            <div id="modal-subtitle" class="modal-subtitle"></div>
+          </div>
         </div>
-        <div id="modal-title"    class="modal-title"></div>
-        <div id="modal-subtitle" class="modal-subtitle"></div>
         <div id="modal-text"     class="modal-text"></div>
         <div id="modal-links"    class="modal-links"></div>
       </div>

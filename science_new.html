@@ -26,7 +26,7 @@
 <main>
 
   <section>
-    <h1>Science</h1>
+    <h2>Science</h2>
     <div class="grid-2">
   <button class="card" onclick="openModal('projects',0)" type="button">
     <img class="card-img" src="assets/img/highlights/coincident.jpg" alt="Coincident Multimessenger Bursts from Eccentric Supermassive Black Holes"
@@ -39,12 +39,12 @@
   </button></div>
 
     <div style="margin-top:3rem">
-      <h2>
+      <h3>
         Latest Publications
         <a href="https://ui.adsabs.harvard.edu/search/q=orcid:0000-0002-8099-9023&sort=date%20desc"
            target="_blank" rel="noopener"
            style="font-size:0.85rem;font-weight:400;color:var(--red);text-decoration:none;margin-left:0.5rem">[ADS]</a>
-      </h2>
+      </h3>
       <ul id="pubList"><li>Loading…</li></ul>
     </div>
   </section>
@@ -69,11 +69,15 @@
       <div id="modal-header"></div>
 
       <div class="modal-body">
-        <div id="modal-avatar-wrap">
-          <img id="modal-avatar" class="modal-avatar" alt="">
+        <div class="modal-member-top">
+          <div id="modal-avatar-wrap">
+            <img id="modal-avatar" class="modal-avatar" alt="">
+          </div>
+          <div id="modal-member-info">
+            <div id="modal-title"    class="modal-title"></div>
+            <div id="modal-subtitle" class="modal-subtitle"></div>
+          </div>
         </div>
-        <div id="modal-title"    class="modal-title"></div>
-        <div id="modal-subtitle" class="modal-subtitle"></div>
         <div id="modal-text"     class="modal-text"></div>
         <div id="modal-links"    class="modal-links"></div>
       </div>

@@ -129,11 +129,15 @@ function modal() {
       <div id="modal-header"></div>
 
       <div class="modal-body">
-        <div id="modal-avatar-wrap">
-          <img id="modal-avatar" class="modal-avatar" alt="">
+        <div class="modal-member-top">
+          <div id="modal-avatar-wrap">
+            <img id="modal-avatar" class="modal-avatar" alt="">
+          </div>
+          <div id="modal-member-info">
+            <div id="modal-title"    class="modal-title"></div>
+            <div id="modal-subtitle" class="modal-subtitle"></div>
+          </div>
         </div>
-        <div id="modal-title"    class="modal-title"></div>
-        <div id="modal-subtitle" class="modal-subtitle"></div>
         <div id="modal-text"     class="modal-text"></div>
         <div id="modal-links"    class="modal-links"></div>
       </div>
