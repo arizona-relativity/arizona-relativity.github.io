@@ -162,11 +162,22 @@ button.member-card { font: inherit; }
 
 /* ── Publications ── */
 #pubList { list-style: none; }
-#pubList li {
-  font-size: 0.875rem; color: var(--muted);
-  padding: 0.6rem 0; border-bottom: 1px solid var(--border);
+.pub-item {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border);
 }
-#pubList a { color: var(--red); }
+.pub-title {
+  font-size: 1.05rem;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.pub-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+.pub-meta a { color: var(--red); }
 
 /* ── Footer ── */
 footer {
