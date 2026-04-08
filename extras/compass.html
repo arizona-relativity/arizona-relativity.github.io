@@ -18,69 +18,53 @@
   }
   html, body { font-family:"proxima-nova","Proxima Nova",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
   html { scroll-behavior: smooth; }
-  /* keep content clear of sticky header */
-  section[id] { scroll-margin-top: 88px; }
+  section[id] { scroll-margin-top: 72px; }
 
-  body{ background:#000; color:#d1d5db; }
-  /* UA blobs + subtle stars */
-  body::before{
-    content:""; position:fixed; inset:0; z-index:-3;
-    background:
-      radial-gradient(900px 500px at 15% 25%, rgba(12,35,75,0.55), transparent 50%),
-      radial-gradient(800px 450px at 40% 80%, rgba(12,35,75,0.50), transparent 50%),
-      radial-gradient(850px 450px at 85% 30%, rgba(171,5,32,0.45), transparent 50%),
-      radial-gradient(700px 400px at 20% 60%, rgba(12,35,75,0.45), transparent 50%),
-      radial-gradient(750px 420px at 65% 85%, rgba(12,35,75,0.40), transparent 50%),
-      radial-gradient(780px 420px at 80% 55%, rgba(171,5,32,0.40), transparent 50%),
-      rgba(0,0,0,0.25);
-  }
-  body::after{
-    content:""; position:fixed; inset:0; z-index:-2; opacity:.45;
-    background-image:
-      radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,.8) 50%, transparent 51%),
-      radial-gradient(1px 1px at 30% 42%, rgba(255,255,255,.6) 50%, transparent 51%),
-      radial-gradient(1px 1px at 68% 28%, rgba(255,255,255,.7) 50%, transparent 51%),
-      radial-gradient(1px 1px at 52% 78%, rgba(255,255,255,.7) 50%, transparent 51%),
-      radial-gradient(1px 1px at 88% 60%, rgba(255,255,255,.8) 50%, transparent 51%);
-    -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 85%);
-            mask-image: radial-gradient(ellipse at center, black 60%, transparent 85%);
-  }
+  body { background: #f5f5f5; color: #1a1a1a; }
 
-  a { color: var(--ua-blue); text-decoration: underline; font-weight:600; }
-  a:hover { color: var(--ua-red); text-decoration: none; text-underline-offset: 3px; }
-  nav a {
-    text-decoration: none;
-  }
+  a { color: var(--ua-blue); text-decoration: underline; font-weight: 600; }
+  a:hover { color: var(--ua-red); }
+  nav a { text-decoration: none; }
 
   .card {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 1rem;
+    background: #fff;
+    border: 1px solid #d1d5db;
   }
+
+  .year-block {
+    border: 1px solid #d1d5db;
+    border-left: 4px solid var(--ua-red);
+    background: #fff;
+  }
+
+  .gh-card {
+    border: 1px solid #d1d5db;
+    background: #fff;
+    transition: background 0.15s;
+  }
+  .gh-card:hover { background: #f9f9f9; }
 </style>
 </head>
 
 <body class="min-h-screen flex flex-col">
 
   <!-- Header -->
-  <header class="sticky top-0 z-40 border-b border-white/10 backdrop-blur bg-black/60">
+  <header class="sticky top-0 z-40 border-b border-gray-300" style="background: var(--ua-blue);">
     <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="#home" class="flex items-center gap-3 text-white" data-nav>
-        <div class="h-7 w-7 rounded-full shadow"
-             style="background: radial-gradient(60% 60% at 40% 40%, var(--ua-blue), transparent 70%), conic-gradient(from 120deg at 50% 50%, var(--ua-red), var(--ua-blue));"></div>
-        <span class="font-bold tracking-wide">COMPASS</span>
+      <a href="#home" class="flex items-center gap-3 font-bold tracking-wide text-white no-underline" data-nav>
+        COMPASS
       </a>
 
       <nav class="flex flex-wrap gap-1 text-sm">
-        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#home">Home</a>
-        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#materials">Materials</a>
-        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#contact">Contact</a>
-        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#schedule">Schedule</a>
-        <a class="px-3 py-2 rounded-md hover:bg-white/10" data-nav href="#faq">FAQ</a>
+        <a class="px-3 py-2 text-white/80 hover:text-white hover:bg-white/10" data-nav href="#home">Home</a>
+        <a class="px-3 py-2 text-white/80 hover:text-white hover:bg-white/10" data-nav href="#materials">Materials</a>
+        <a class="px-3 py-2 text-white/80 hover:text-white hover:bg-white/10" data-nav href="#contact">Contact</a>
+        <a class="px-3 py-2 text-white/80 hover:text-white hover:bg-white/10" data-nav href="#schedule">Schedule</a>
+        <a class="px-3 py-2 text-white/80 hover:text-white hover:bg-white/10" data-nav href="#faq">FAQ</a>
       </nav>
 
       <a href="../index.html"
-         class="hidden sm:inline-flex items-center gap-2 px-3 py-2 rounded-md border border-white/15 bg-white/5 hover:bg-white/10 text-sm">
+         class="hidden sm:inline-flex items-center gap-2 px-3 py-2 border border-white/30 text-white/80 hover:text-white hover:bg-white/10 text-sm no-underline">
         ← Back to Arizona Relativity
       </a>
     </div>
@@ -88,44 +72,42 @@
 
   <main class="flex-1">
 
-    <!-- HOME: banner above title -->
+    <!-- HOME -->
     <section id="home" class="page">
       <div class="max-w-5xl mx-auto px-4 pt-8">
-        <div class="card overflow-hidden">
+        <div class="overflow-hidden">
           <img src="../img/compass/cosmic_cliffs.png" alt="Banner Image" class="w-full h-[300px] object-cover object-center"/>
         </div>
       </div>
-      <div class="max-w-5xl mx-auto px-4 py-10">
-        <h1 class="text-5xl md:text-6xl font-extrabold tracking-wider" style="letter-spacing:4px">COMPASS</h1>
+      <div class="max-w-5xl mx-auto px-4 py-8">
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-wider" style="letter-spacing:4px; color:var(--ua-blue)">COMPASS</h1>
       </div>
 
-      <!-- About (content unchanged) -->
-      <section id="about" class="max-w-5xl mx-auto px-4">
+      <section id="about" class="max-w-5xl mx-auto px-4 pb-10">
         <div class="card p-6 md:p-8">
-          <h2 class="text-2xl md:text-3xl font-semibold mb-3">About</h2>
-          <p class="mb-4">The <strong>Co</strong>mputational and <strong>M</strong>athematical <strong>P</strong>rogram for incoming <strong>A</strong>rizona <strong>S</strong>cience <strong>S</strong>tudents is a new UArizona initiative aimed at smoothing the transition of students from high school to college, helping them succeed in their studies, and increasing equitable access and retention in STEM fields. The workshops are open to everyone, but incoming undergraduate students and rising sophomores are the main target group. There are two types of COMPASS workshops offered: the first is a week-long workshop on the fundamentals of computation that takes place the week before the Fall semester. The second series of workshops are on math preparation where students are trained in algebra, geometry and pre-calculus. </p>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-3" style="color:var(--ua-blue)">About</h2>
+          <p class="mb-4">The <strong>Co</strong>mputational and <strong>M</strong>athematical <strong>P</strong>rogram for incoming <strong>A</strong>rizona <strong>S</strong>cience <strong>S</strong>tudents is a new UArizona initiative aimed at smoothing the transition of students from high school to college, helping them succeed in their studies, and increasing equitable access and retention in STEM fields. The workshops are open to everyone, but incoming undergraduate students and rising sophomores are the main target group. There are two types of COMPASS workshops offered: the first is a week-long workshop on the fundamentals of computation that takes place the week before the Fall semester. The second series of workshops are on math preparation where students are trained in algebra, geometry and pre-calculus.</p>
           <p>COMPASS is supported by National Science Foundation CAREER grant No. 2145421 to PI Paschalidis.</p>
         </div>
       </section>
     </section>
 
-    <!-- MATERIALS (content unchanged) -->
+    <!-- MATERIALS -->
     <section id="materials" class="page">
       <div class="max-w-5xl mx-auto px-4 py-10">
         <div class="card p-6 md:p-8">
-          <h2 class="text-2xl md:text-3xl font-semibold mb-5">Materials</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-5" style="color:var(--ua-blue)">Materials</h2>
 
           <!-- GitHub repo card -->
           <a id="gh-repo-card" href="https://github.com/arizona-relativity/compass" target="_blank"
-             class="flex items-start gap-4 rounded-xl border border-white/15 bg-white/5 p-5 mb-6 hover:bg-white/10 transition-colors no-underline">
-            <!-- GitHub mark -->
-            <svg class="shrink-0 mt-0.5 opacity-70" width="28" height="28" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+             class="gh-card flex items-start gap-4 p-5 mb-6 no-underline text-inherit">
+            <svg class="shrink-0 mt-0.5" style="opacity:0.5" width="28" height="28" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"/>
             </svg>
             <div class="min-w-0">
-              <p id="gh-repo-name" class="font-semibold text-white text-base mb-1">arizona-relativity/compass</p>
-              <p id="gh-repo-desc" class="text-sm text-gray-400 mb-3">Loading…</p>
-              <div class="flex flex-wrap gap-4 text-xs text-gray-400">
+              <p id="gh-repo-name" class="font-semibold text-base mb-1" style="color:var(--ua-blue)">arizona-relativity/compass</p>
+              <p id="gh-repo-desc" class="text-sm text-gray-500 mb-3">Loading…</p>
+              <div class="flex flex-wrap gap-4 text-xs text-gray-500">
                 <span id="gh-repo-lang" class="hidden">● <span></span></span>
                 <span id="gh-repo-stars" class="hidden flex items-center gap-1">
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
@@ -146,11 +128,11 @@
       </div>
     </section>
 
-    <!-- CONTACT (content unchanged) -->
+    <!-- CONTACT -->
     <section id="contact" class="page">
       <div class="max-w-5xl mx-auto px-4 py-10">
         <div class="card p-6 md:p-8">
-          <h2 class="text-2xl md:text-3xl font-semibold mb-3">Contact Us</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-3" style="color:var(--ua-blue)">Contact Us</h2>
           <p>For more information, please reach out to us at:</p>
           <p><a href="https://astro.arizona.edu/person/vasileios-vasilis-paschalidis" target="_blank">Professor Vasileois Paschalidis</a>: vpaschal@arizona.edu</p>
           <p><a href="https://w3.physics.arizona.edu/people/erik-wessel" target="_blank">Erik Wessel</a>: ekwessel@arizona.edu</p>
@@ -159,24 +141,22 @@
       </div>
     </section>
 
-    
-
-    <!-- SCHEDULE (content unchanged) -->
+    <!-- SCHEDULE -->
     <section id="schedule" class="page">
       <div class="max-w-5xl mx-auto px-4 py-10">
         <div class="card p-6 md:p-8">
-          <h2 class="text-2xl md:text-3xl font-semibold mb-6">Schedule</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-6" style="color:var(--ua-blue)">Schedule</h2>
 
           <!-- 2026 -->
-          <div class="rounded-xl border border-white/15 bg-white/5 p-5 mb-6">
-            <h3 class="text-xl font-bold mb-4 tracking-wide" style="color:var(--ua-red)">2026</h3>
+          <div class="year-block p-5 mb-6">
+            <h3 class="text-xl font-bold mb-4" style="color:var(--ua-red)">2026</h3>
 
             <h4 class="text-base font-semibold mb-1">March 26 <a href="https://colab.research.google.com/drive/1Usb8Kb2WwW-CPDYKnxulZc0f7beIYsDT" target="_blank">[collab notebook]</a></h4>
             <p>Introductions</p>
-            <p class="mb-4">Intro to Python &amp; Hands-on Experience </p>
+            <p class="mb-4">Intro to Python &amp; Hands-on Experience</p>
 
             <h4 class="text-base font-semibold mb-1">April 2 <a href="https://colab.research.google.com/drive/1Usb8Kb2WwW-CPDYKnxulZc0f7beIYsDT" target="_blank">[collab notebook]</a></h4>
-            <p>More Python &amp; Hands-on Experience </p>
+            <p>More Python &amp; Hands-on Experience</p>
             <p class="mb-4">Debugging</p>
 
             <h4 class="text-base font-semibold mb-1">April 9</h4>
@@ -201,8 +181,8 @@
           </div>
 
           <!-- 2024 -->
-          <div class="rounded-xl border border-white/15 bg-white/5 p-5">
-            <h3 class="text-xl font-bold mb-4 tracking-wide" style="color:var(--ua-red)">2024</h3>
+          <div class="year-block p-5">
+            <h3 class="text-xl font-bold mb-4" style="color:var(--ua-red)">2024</h3>
 
             <h4 class="text-base font-semibold mb-1">Monday [<a href="https://arizona.box.com/s/d7zgjzjh76fwftvv7j370hrovdskiv2n">2024 recording</a>]</h4>
             <p><em>10am-10:30am:</em> Introductions & Pre-workshop survey</p>
@@ -238,11 +218,11 @@
       </div>
     </section>
 
-    <!-- FAQ (content unchanged) -->
+    <!-- FAQ -->
     <section id="faq" class="page mb-16">
       <div class="max-w-5xl mx-auto px-4 py-10">
         <div class="card p-6 md:p-8">
-          <h2 class="text-2xl md:text-3xl font-semibold mb-3">Frequently Asked Questions</h2>
+          <h2 class="text-2xl md:text-3xl font-semibold mb-3" style="color:var(--ua-blue)">Frequently Asked Questions</h2>
 
           <h3 class="text-lg font-semibold">Is it okay if I have next to no coding/programming knowledge?</h3>
           <p class="mb-4">It is perfectly fine if you have no prior coding/programming experience.</p>
@@ -283,13 +263,13 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-white/10 bg-black/70">
-    <div class="max-w-5xl mx-auto px-4 py-8 text-sm flex items-center justify-between text-gray-400">
+  <footer class="border-t border-gray-300 bg-white">
+    <div class="max-w-5xl mx-auto px-4 py-8 text-sm flex items-center justify-between text-gray-500">
       <div>COMPASS &copy; 2026</div>
       <div class="flex gap-2">
-        <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" href="#materials" data-nav>Materials</a>
-        <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" href="#contact" data-nav>Contact</a>
-        <a class="px-3 py-1 rounded-md border border-white/15 bg-white/5 hover:bg-white/10" href="#faq" data-nav>FAQ</a>
+        <a class="px-3 py-1 border border-gray-300 hover:bg-gray-100 no-underline text-gray-600" href="#materials" data-nav>Materials</a>
+        <a class="px-3 py-1 border border-gray-300 hover:bg-gray-100 no-underline text-gray-600" href="#contact" data-nav>Contact</a>
+        <a class="px-3 py-1 border border-gray-300 hover:bg-gray-100 no-underline text-gray-600" href="#faq" data-nav>FAQ</a>
       </div>
     </div>
   </footer>
@@ -329,7 +309,7 @@ fetch('https://api.github.com/repos/arizona-relativity/compass')
 </script>
 
 <script>
-/* Smooth scrolling is CSS; this just highlights the active nav link as you scroll */
+/* Highlights the active nav link as you scroll */
 document.addEventListener("DOMContentLoaded", () => {
   const links = Array.from(document.querySelectorAll('a[data-nav]'));
   const sections = Array.from(document.querySelectorAll('section[id]'));
@@ -351,7 +331,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach(sec => io.observe(sec));
 
-  // If loading with a hash, scroll into view (smooth handled by CSS)
   if (location.hash) {
     const el = document.querySelector(location.hash);
     el?.scrollIntoView({ behavior: "smooth", block: "start" });
