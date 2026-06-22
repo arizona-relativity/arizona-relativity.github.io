@@ -119,25 +119,6 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025PhRvD.112j3050M",
-        "author": [
-          "Manikantan, Vikram",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.112"
-        ],
-        "doi": [
-          "10.1103/g98b-m8m1",
-          "10.48550/arXiv.2509.18254"
-        ],
-        "title": [
-          "Magnetically arrested minidisks around nonspinning binary black holes: The MAD scenario for circumbinary disk accretion"
-        ],
-        "year": "2025"
-      },
-      {
         "bibcode": "2025ApJ...993..176W",
         "author": [
           "Wen, Sixiang",
@@ -153,6 +134,25 @@
         ],
         "title": [
           "A Pseudo-Newtonian Stationary Circumbinary Slim Disk Model"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025PhRvD.112j3050M",
+        "author": [
+          "Manikantan, Vikram",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.112"
+        ],
+        "doi": [
+          "10.1103/g98b-m8m1",
+          "10.48550/arXiv.2509.18254"
+        ],
+        "title": [
+          "Magnetically arrested minidisks around nonspinning binary black holes: The MAD scenario for circumbinary disk accretion"
         ],
         "year": "2025"
       },
@@ -401,25 +401,6 @@
         "year": "2025"
       },
       {
-        "bibcode": "2024PhRvD.110d3002R",
-        "author": [
-          "Raithel, Carolyn A.",
-          "Paschalidis, Vasileios"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.110"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.110.043002",
-          "10.48550/arXiv.2312.14046"
-        ],
-        "title": [
-          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
-        ],
-        "year": "2024"
-      },
-      {
         "bibcode": "2024PhRvD.110d4037N",
         "author": [
           "Naseri, Mahdi",
@@ -436,6 +417,25 @@
         ],
         "title": [
           "Exploring pathways to forming twin stars"
+        ],
+        "year": "2024"
+      },
+      {
+        "bibcode": "2024PhRvD.110d3002R",
+        "author": [
+          "Raithel, Carolyn A.",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.110"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.110.043002",
+          "10.48550/arXiv.2312.14046"
+        ],
+        "title": [
+          "Detectability of finite-temperature effects from neutron star mergers with next-generation gravitational wave detectors"
         ],
         "year": "2024"
       },
