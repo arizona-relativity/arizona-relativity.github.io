@@ -21,30 +21,6 @@
         "year": "2026"
       },
       {
-        "bibcode": "2025PhRvD.112l4071H",
-        "author": [
-          "Hu, Zexin",
-          "Doneva, Daniela D.",
-          "Wang, Ziming",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele",
-          "Yazadjiev, Stoytcho S.",
-          "Shao, Lijing"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.112"
-        ],
-        "doi": [
-          "10.1103/ptbz-g4kx",
-          "10.48550/arXiv.2509.07111"
-        ],
-        "title": [
-          "Ringdown mode amplitudes of charged binary black holes"
-        ],
-        "year": "2025"
-      },
-      {
         "bibcode": "2025ApJ...994L..45F",
         "author": [
           "Franz, Noah",
@@ -119,21 +95,26 @@
         "year": "2025"
       },
       {
-        "bibcode": "2025ApJ...993..176W",
+        "bibcode": "2025PhRvD.112l4071H",
         "author": [
-          "Wen, Sixiang",
-          "Paschalidis, Vasileios"
+          "Hu, Zexin",
+          "Doneva, Daniela D.",
+          "Wang, Ziming",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele",
+          "Yazadjiev, Stoytcho S.",
+          "Shao, Lijing"
         ],
         "bibstem": [
-          "ApJ",
-          "ApJ...993"
+          "PhRvD",
+          "PhRvD.112"
         ],
         "doi": [
-          "10.3847/1538-4357/ae0b5b",
-          "10.48550/arXiv.2508.15150"
+          "10.1103/ptbz-g4kx",
+          "10.48550/arXiv.2509.07111"
         ],
         "title": [
-          "A Pseudo-Newtonian Stationary Circumbinary Slim Disk Model"
+          "Ringdown mode amplitudes of charged binary black holes"
         ],
         "year": "2025"
       },
@@ -153,6 +134,25 @@
         ],
         "title": [
           "Magnetically arrested minidisks around nonspinning binary black holes: The MAD scenario for circumbinary disk accretion"
+        ],
+        "year": "2025"
+      },
+      {
+        "bibcode": "2025ApJ...993..176W",
+        "author": [
+          "Wen, Sixiang",
+          "Paschalidis, Vasileios"
+        ],
+        "bibstem": [
+          "ApJ",
+          "ApJ...993"
+        ],
+        "doi": [
+          "10.3847/1538-4357/ae0b5b",
+          "10.48550/arXiv.2508.15150"
+        ],
+        "title": [
+          "A Pseudo-Newtonian Stationary Circumbinary Slim Disk Model"
         ],
         "year": "2025"
       },
@@ -341,6 +341,26 @@
         "year": "2025"
       },
       {
+        "bibcode": "2025PhRvD.111j4032S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104032",
+          "10.48550/arXiv.2412.01881"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
+        ],
+        "year": "2025"
+      },
+      {
         "bibcode": "2025ApJ...984L..47M",
         "author": [
           "Manikantan, Vikram",
@@ -377,26 +397,6 @@
         ],
         "title": [
           "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
-        ],
-        "year": "2025"
-      },
-      {
-        "bibcode": "2025PhRvD.111j4032S",
-        "author": [
-          "Smith, M. A. M.",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.111"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.111.104032",
-          "10.48550/arXiv.2412.01881"
-        ],
-        "title": [
-          "High-energy interactions of charged black holes in full general relativity. II. Near-extremal merger remnants and universality with the irreducible mass"
         ],
         "year": "2025"
       },
