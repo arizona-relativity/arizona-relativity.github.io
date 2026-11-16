@@ -2,6 +2,29 @@
   "response": {
     "docs": [
       {
+        "bibcode": "2026PhRvD.114j4024F",
+        "author": [
+          "Ferreira, José",
+          "Bozzola, Gabriele",
+          "Herdeiro, Carlos A. R.",
+          "Paschalidis, Vasileios",
+          "Zilhão, Miguel"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.114"
+        ],
+        "doi": [
+          "10.1103/9lfq-633s",
+          "10.48550/arXiv.2605.20493"
+        ],
+        "title": [
+          "Electromagnetic duality degeneracy in dynamical black hole mergers"
+        ],
+        "year": "2026",
+        "publisher": "APS"
+      },
+      {
         "bibcode": "2026ApJ..1007..116V",
         "author": [
           "Vieira, Nicholas",
@@ -418,27 +441,6 @@
         "publisher": "APS"
       },
       {
-        "bibcode": "2025PhRvD.111j4031S",
-        "author": [
-          "Smith, M. A. M.",
-          "Paschalidis, Vasileios",
-          "Bozzola, Gabriele"
-        ],
-        "bibstem": [
-          "PhRvD",
-          "PhRvD.111"
-        ],
-        "doi": [
-          "10.1103/PhysRevD.111.104031",
-          "10.48550/arXiv.2411.11960"
-        ],
-        "title": [
-          "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
-        ],
-        "year": "2025",
-        "publisher": "APS"
-      },
-      {
         "bibcode": "2025ApJ...984L..47M",
         "author": [
           "Manikantan, Vikram",
@@ -458,6 +460,27 @@
         ],
         "year": "2025",
         "publisher": "IOP"
+      },
+      {
+        "bibcode": "2025PhRvD.111j4031S",
+        "author": [
+          "Smith, M. A. M.",
+          "Paschalidis, Vasileios",
+          "Bozzola, Gabriele"
+        ],
+        "bibstem": [
+          "PhRvD",
+          "PhRvD.111"
+        ],
+        "doi": [
+          "10.1103/PhysRevD.111.104031",
+          "10.48550/arXiv.2411.11960"
+        ],
+        "title": [
+          "High-energy interactions of charged black holes in full general relativity. I. Zoom-whirl orbits and universality with the irreducible mass"
+        ],
+        "year": "2025",
+        "publisher": "APS"
       },
       {
         "bibcode": "2025PhRvD.111j4032S",
